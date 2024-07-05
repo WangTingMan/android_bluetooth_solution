@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\audit_log.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\metric_id_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\stop_watch.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\strings.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\dumpsys\filter.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\dumpsys\internal\filter_internal.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\dumpsys\reflection_schema.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\hci_hal_windows.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\link_clocker.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\ranging_hal_android.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_connection.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_fragmenter.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_scheduler.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\classic_acl_connection.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_acl_connection.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\round_robin_scheduler.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\address.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\class_of_device.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\controller.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\distance_measurement_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\hci_layer.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\hci_metrics_logging.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_address_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_advertising_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_reassembler.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\link_key.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\remote_name_request.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\uuid.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_service.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_service.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dumpsys_helper.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dynamic_channel_service_manager_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_service_manager_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\signalling_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\l2cap_classic_module.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\dynamic_channel.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\fcs.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\basic_mode_channel_data_controller.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\data_pipeline_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_allocator.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\enhanced_retransmission_mode_channel_data_controller.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\le_credit_based_channel_data_controller.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\receiver.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\scheduler_fifo.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\sender.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_service.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_service.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\dynamic_channel_service_manager_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_service_manager_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\signalling_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\l2cap_le_module.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\link_options.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\metrics\counter_metrics.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\metrics\metrics_state.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\metrics\utils.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\module.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\module_dumper.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\neighbor\name_db.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\neighbor\scan.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\android\metrics.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\android\system_properties.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\handler.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\host\wakelock_native.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\logging\log_redaction.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\system_properties_common.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\alarm.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\files.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\parameter_provider.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\reactive_semaphore.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\reactor.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\repeating_alarm.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\thread.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\wakelock_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\bit_inserter.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\byte_inserter.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\byte_observer.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\fragmenting_inserter.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\iterator.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\packet_view.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\raw_builder.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\view.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\channel\security_manager_channel.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\ecc\multprecision.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\ecc\p_256_ecc_pp.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\ecdh_keys.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\internal\security_manager_impl.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\l2cap_security_module_interface.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing\classic_pairing_handler.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le_legacy.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le_secure_connections.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\record\security_record_storage.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\security_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\security_module.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\stack_manager.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\classic_device.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\config_cache.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\config_cache_helper.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\device.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\legacy_config_file.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\le_device.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\mutation.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\mutation_entry.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\storage_module.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\sysprops\sysprops_module.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\audit_log.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\metric_id_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\stop_watch.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\strings.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\dumpsys.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\filter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\internal\filter_internal.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\reflection_schema.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\link_clocker.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger_common.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger_socket_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\syscall_wrapper_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_connection.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_fragmenter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_scheduler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\assembler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\classic_acl_connection.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\classic_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\connection_callbacks.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\connection_management_callbacks.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_acceptlist_callbacks.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_acl_connection.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_connection_callbacks.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_connection_management_callbacks.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\round_robin_scheduler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\address.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\class_of_device.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\controller.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\controller_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\distance_measurement_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\distance_measurement_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\enum_helper.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\event_checkers.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\hci_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\hci_layer.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\hci_metrics_logging.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_acl_connection_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_address_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_advertising_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_advertising_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_iso_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_periodic_sync_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_rand_callback.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_callback.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_reassembler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_security_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\link_key.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\octets.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\remote_name_request.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\security_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\uuid.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_configuration_option.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_service.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_service.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\channel_configuration_state.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dumpsys_helper.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dynamic_channel_service_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dynamic_channel_service_manager_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_service_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_service_manager_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\signalling_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\l2cap_classic_module.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\link_property_listener.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\link_security_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\security_enforcement_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\security_policy.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\dynamic_channel.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\fcs.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\basic_mode_channel_data_controller.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\channel_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\data_controller.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\data_pipeline_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_allocator.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\enhanced_retransmission_mode_channel_data_controller.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\fixed_channel_allocator.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\ilink.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\le_credit_based_channel_data_controller.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\parameter_provider.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\receiver.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\scheduler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\scheduler_fifo.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\sender.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_configuration_option.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_service.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_service.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\dynamic_channel_service_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\dynamic_channel_service_manager_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_service_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_service_manager_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\signalling_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\l2cap_le_module.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\link_options.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\link_property_listener.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\security_enforcement_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\security_policy.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\mtu.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\psm.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\signal_id.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\counter_metrics.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\metrics.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\metrics_state.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\utils.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_dumper.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_dumper_flatbuffer.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_jniloop.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_mainloop.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\neighbor\name_db.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\neighbor\scan.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\handler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\logging\log_adapter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\logging\log_redaction.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\system_properties.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\base_packet_builder.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\base_struct.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\bit_inserter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\byte_inserter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\byte_observer.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\checksum_type_checker.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\custom_field_fixed_size_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\custom_type_checker.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\endian_inserter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\fragmenting_inserter.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\iterator.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\packet_builder.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\packet_struct.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\packet_view.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\raw_builder.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\view.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\channel\security_manager_channel.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ecc\multprecision.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ecc\p_256_ecc_pp.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ecdh_keys.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\initial_informations.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\internal\security_manager_impl.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\l2cap_security_module_interface.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing\classic_pairing_handler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing\oob_data.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing\pairing_handler.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing_failure.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\record\security_record.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\record\security_record_database.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\record\security_record_storage.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\security_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\security_module.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ui.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\stack_manager.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\classic_device.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\config_cache.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\config_cache_helper.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\config_keys.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\device.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\legacy_config_file.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\le_device.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\mutation.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\mutation_entry.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\serializable.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\storage_module.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\sysprops\sysprops_module.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a7cbac38-88ca-4ee0-b47e-8644e976c75c}</ProjectGuid>
+    <RootNamespace>libbluetoothgd</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\stack\include;$(SolutionDir)../Bluetooth\system\include\hardware\avrcp;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\flags\exported_include;$(SolutionDir)../Bluetooth\sysprop\exported_include;$(SolutionDir)../generated/sysprop/include;$(SolutionDir)../generated;E:\VCLAB\component\chromebase;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\flatbuffers\include;E:\VCLAB\component\protobuf\src;E:\VCLAB\component\boringssl\src\include;E:\VCLAB\component\system\external\googletest\googletest\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\generated_files\android.hardware.bluetooth.ranging-V1-ndk;E:\VCLAB\component\frameworks_native\libs\binder\ndk\include_platform;E:\VCLAB\component\frameworks_native/libs/binder/ndk/include_cpp;E:\VCLAB\component\frameworks_native/libs/binder/ndk/include_ndk;E:\VCLAB\component\libhardware\include;E:\VCLAB\component\libhidl/base/include;E:\VCLAB\component\generated_files\hidl;E:\VCLAB\component\libhwbinder/include;E:\VCLAB\component\libhidl/transport/include;E:\VCLAB\component\libbase/include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/Zc:preprocessor /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ObjectFileName>$(OutDir)$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

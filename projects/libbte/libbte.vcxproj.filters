@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BluetoothStackManagerSources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="LibBluetoothShimSources">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="LibBluetoothShimSources\include">
+      <UniqueIdentifier>{ecf7cdeb-3e2d-417f-b38f-74dc9350f13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibBluetoothSources">
+      <UniqueIdentifier>{50ffe4bc-c9ef-4edc-8377-b38f3c5e156f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\entry.cc">
+      <Filter>BluetoothStackManagerSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\stack.cc">
+      <Filter>BluetoothStackManagerSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\acl.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\acl_api.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\acl_legacy_interface.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\btm_api.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\config.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\distance_measurement_manager.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\dumpsys.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\hci_layer.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\le_advertising_manager.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\le_scanning_manager.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\metric_id_api.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\metrics_api.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\shim.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\shim\utils.cc">
+      <Filter>LibBluetoothShimSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\bte_conf.cc">
+      <Filter>LibBluetoothSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\main\stack_config.cc">
+      <Filter>LibBluetoothSources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\entry.h">
+      <Filter>BluetoothStackManagerSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\stack.h">
+      <Filter>BluetoothStackManagerSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\acl.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\acl_api.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\acl_legacy_interface.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\btm_api.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\config.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\distance_measurement_manager.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\dumpsys.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\hci_layer.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\helpers.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\l2c_api.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\le_advertising_manager.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\le_scanning_manager.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\link_connection_interface.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\metric_id_api.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\metrics_api.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\shim.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\main\shim\utils.h">
+      <Filter>LibBluetoothShimSources\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BluetoothCommonSources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="BluetoothDumpsysSources">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="BluetoothHalSources">
+      <UniqueIdentifier>{4eaf8ff4-67e1-4a69-a182-7a4901bdebaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothHciSources">
+      <UniqueIdentifier>{e2b0c44b-64fd-4878-9cc5-4f77e310329b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothHciSources\acl_manager">
+      <UniqueIdentifier>{3bdbd4a7-9027-4f97-95e4-164fadf21e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothL2capSources">
+      <UniqueIdentifier>{74b4fd8c-0125-4565-a416-40298bc931ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothL2capSources\classic">
+      <UniqueIdentifier>{284bd654-8f1a-48ff-a0e1-ab11d0fbf33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothL2capSources\classic\internal">
+      <UniqueIdentifier>{105b9026-6cd3-4b1b-8515-6e058a08ab37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothL2capSources\internal">
+      <UniqueIdentifier>{4757c1b3-dd27-4b91-a9fc-62b7bc910afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothL2capSources\le">
+      <UniqueIdentifier>{eba8d070-ec1d-4ff6-88df-1ba740995b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothL2capSources\le\internal">
+      <UniqueIdentifier>{8ae6ed9f-8663-4314-b42e-a310acede275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothLogRedactionSources">
+      <UniqueIdentifier>{8c6de6bc-d5d6-4cc4-af63-0de7980cfb6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothMetricsSources">
+      <UniqueIdentifier>{7596807a-e599-4746-9d26-bdeef841f2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothNeighborSources">
+      <UniqueIdentifier>{74906bc1-26a5-40db-9483-d09b856bb96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothOsSources">
+      <UniqueIdentifier>{db0fa472-1873-4e72-8c5b-3cfb2628322e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothPacketSources">
+      <UniqueIdentifier>{17c7a37b-cdd2-4141-8a88-f57c9ed1c669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothSecuritySources">
+      <UniqueIdentifier>{aa7a5f9d-c033-4675-8c07-6e08ba6bd20a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothSecuritySources\BluetoothSecurityChannelSources">
+      <UniqueIdentifier>{a86b9a20-8e3e-430b-8fdc-4b96ca6a7f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothSecuritySources\BluetoothSecurityPairingSources">
+      <UniqueIdentifier>{6fd08e63-984e-47bf-b830-146649cf2d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothSecuritySources\BluetoothSecurityRecordSources">
+      <UniqueIdentifier>{b47eda82-5bb7-4294-a42f-17b221170b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothStorageSources">
+      <UniqueIdentifier>{2577f060-9be4-4ebf-805b-b9ee31eb0a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothSyspropsSources">
+      <UniqueIdentifier>{f67d9d32-8994-4baf-9602-1a192f22ba76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{05655302-ff9a-4af2-ae22-4d9c2f88f0a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{d24b9957-68f9-405c-a125-2fbaa1f368cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="windows">
+      <UniqueIdentifier>{61992370-94b1-4b60-855f-feab68606d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BluetoothHalSources_ranging_android">
+      <UniqueIdentifier>{81c1f871-60d4-4091-b1ff-6960aef6f2f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\audit_log.cc">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\metric_id_manager.cc">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\stop_watch.cc">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\common\strings.cc">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\dumpsys\filter.cc">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\dumpsys\reflection_schema.cc">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\dumpsys\internal\filter_internal.cc">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\link_clocker.cc">
+      <Filter>BluetoothHalSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger.cc">
+      <Filter>BluetoothHalSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_connection.cc">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_fragmenter.cc">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_scheduler.cc">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\classic_acl_connection.cc">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_acl_connection.cc">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\round_robin_scheduler.cc">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\controller.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\distance_measurement_manager.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\hci_layer.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\hci_metrics_logging.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_address_manager.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_advertising_manager.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_manager.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_reassembler.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\link_key.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\remote_name_request.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\uuid.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_manager.cc">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_service.cc">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel.cc">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_manager.cc">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_service.cc">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\l2cap_classic_module.cc">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dumpsys_helper.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dynamic_channel_service_manager_impl.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_impl.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_service_manager_impl.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link_manager.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\signalling_manager.cc">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\dynamic_channel.cc">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\fcs.cc">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\basic_mode_channel_data_controller.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\data_pipeline_manager.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_allocator.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_impl.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\enhanced_retransmission_mode_channel_data_controller.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\le_credit_based_channel_data_controller.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\receiver.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\scheduler_fifo.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\internal\sender.cc">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_manager.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_service.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_manager.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_service.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\l2cap_le_module.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\link_options.cc">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\dynamic_channel_service_manager_impl.cc">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_impl.cc">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_service_manager_impl.cc">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link.cc">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link_manager.cc">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\signalling_manager.cc">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\logging\log_redaction.cc">
+      <Filter>BluetoothLogRedactionSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\metrics\counter_metrics.cc">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\metrics\metrics_state.cc">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\metrics\utils.cc">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\neighbor\name_db.cc">
+      <Filter>BluetoothNeighborSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\neighbor\scan.cc">
+      <Filter>BluetoothNeighborSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\handler.cc">
+      <Filter>BluetoothOsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\system_properties_common.cc">
+      <Filter>BluetoothOsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\bit_inserter.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\byte_inserter.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\byte_observer.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\fragmenting_inserter.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\iterator.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\packet_view.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\raw_builder.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\view.cc">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\ecc\multprecision.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\ecc\p_256_ecc_pp.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\ecdh_keys.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\l2cap_security_module_interface.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le_legacy.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le_secure_connections.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\security_manager.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\security_module.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\internal\security_manager_impl.cc">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\channel\security_manager_channel.cc">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityChannelSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\pairing\classic_pairing_handler.cc">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityPairingSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\security\record\security_record_storage.cc">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityRecordSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\classic_device.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\config_cache.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\config_cache_helper.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\device.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\le_device.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\legacy_config_file.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\mutation.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\mutation_entry.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\storage\storage_module.cc">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\sysprops\sysprops_module.cc">
+      <Filter>BluetoothSyspropsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\module.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\module_dumper.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\stack_manager.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\alarm.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\files.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\reactive_semaphore.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\reactor.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\repeating_alarm.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\thread.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\wakelock_manager.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\windows\parameter_provider.cc">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\class_of_device.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hci\address.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\android\system_properties.cc">
+      <Filter>BluetoothOsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\android\metrics.cc">
+      <Filter>BluetoothOsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\hci_hal_windows.cc">
+      <Filter>BluetoothHciSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\os\host\wakelock_native.cc">
+      <Filter>BluetoothOsSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\hal\ranging_hal_android.cc">
+      <Filter>BluetoothHalSources_ranging_android</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\audit_log.h">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\metric_id_manager.h">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\stop_watch.h">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\common\strings.h">
+      <Filter>BluetoothCommonSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\dumpsys.h">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\filter.h">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\reflection_schema.h">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\dumpsys\internal\filter_internal.h">
+      <Filter>BluetoothDumpsysSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\link_clocker.h">
+      <Filter>BluetoothHalSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger.h">
+      <Filter>BluetoothHalSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger_common.h">
+      <Filter>BluetoothHalSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\snoop_logger_socket_interface.h">
+      <Filter>BluetoothHalSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hal\syscall_wrapper_interface.h">
+      <Filter>BluetoothHalSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_connection.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_fragmenter.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\acl_scheduler.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\assembler.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\classic_acl_connection.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\classic_impl.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\connection_callbacks.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\connection_management_callbacks.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_acceptlist_callbacks.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_acl_connection.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_connection_callbacks.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_connection_management_callbacks.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\le_impl.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\acl_manager\round_robin_scheduler.h">
+      <Filter>BluetoothHciSources\acl_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\controller.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\controller_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\distance_measurement_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\distance_measurement_manager.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\enum_helper.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\event_checkers.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\hci_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\hci_layer.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\hci_metrics_logging.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_acl_connection_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_address_manager.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_advertising_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_advertising_manager.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_iso_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_periodic_sync_manager.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_rand_callback.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_callback.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_manager.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_scanning_reassembler.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\le_security_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\link_key.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\octets.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\remote_name_request.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\security_interface.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\uuid.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\channel_configuration_state.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dumpsys_helper.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dynamic_channel_service_impl.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\dynamic_channel_service_manager_impl.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_impl.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_service_impl.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\fixed_channel_service_manager_impl.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\link_manager.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\internal\signalling_manager.h">
+      <Filter>BluetoothL2capSources\classic\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_configuration_option.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_manager.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\dynamic_channel_service.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_manager.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\fixed_channel_service.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\l2cap_classic_module.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\link_property_listener.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\link_security_interface.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\security_enforcement_interface.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\classic\security_policy.h">
+      <Filter>BluetoothL2capSources\classic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\dynamic_channel.h">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\fcs.h">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\mtu.h">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\psm.h">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\signal_id.h">
+      <Filter>BluetoothL2capSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\basic_mode_channel_data_controller.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\channel_impl.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\data_controller.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\data_pipeline_manager.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_allocator.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\dynamic_channel_impl.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\enhanced_retransmission_mode_channel_data_controller.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\fixed_channel_allocator.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\ilink.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\le_credit_based_channel_data_controller.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\parameter_provider.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\receiver.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\scheduler.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\scheduler_fifo.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\internal\sender.h">
+      <Filter>BluetoothL2capSources\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_configuration_option.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_manager.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\dynamic_channel_service.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_manager.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\fixed_channel_service.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\l2cap_le_module.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\link_options.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\link_property_listener.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\security_enforcement_interface.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\security_policy.h">
+      <Filter>BluetoothL2capSources\le</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\dynamic_channel_service_impl.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\dynamic_channel_service_manager_impl.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_impl.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_service_impl.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\fixed_channel_service_manager_impl.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\link_manager.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\l2cap\le\internal\signalling_manager.h">
+      <Filter>BluetoothL2capSources\le\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\logging\log_adapter.h">
+      <Filter>BluetoothLogRedactionSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\logging\log_redaction.h">
+      <Filter>BluetoothLogRedactionSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\counter_metrics.h">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\metrics.h">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\metrics_state.h">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\metrics\utils.h">
+      <Filter>BluetoothMetricsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\neighbor\name_db.h">
+      <Filter>BluetoothNeighborSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\neighbor\scan.h">
+      <Filter>BluetoothNeighborSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\handler.h">
+      <Filter>BluetoothOsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\os\system_properties.h">
+      <Filter>BluetoothOsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\base_packet_builder.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\base_struct.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\bit_inserter.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\byte_inserter.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\byte_observer.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\checksum_type_checker.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\custom_field_fixed_size_interface.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\custom_type_checker.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\endian_inserter.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\fragmenting_inserter.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\iterator.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\packet_builder.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\packet_struct.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\packet_view.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\raw_builder.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\view.h">
+      <Filter>BluetoothPacketSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ecc\multprecision.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ecc\p_256_ecc_pp.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ecdh_keys.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\initial_informations.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\l2cap_security_module_interface.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing_failure.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing_handler_le.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\security_manager.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\security_module.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\ui.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\internal\security_manager_impl.h">
+      <Filter>BluetoothSecuritySources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\channel\security_manager_channel.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityChannelSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing\classic_pairing_handler.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityPairingSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing\oob_data.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityPairingSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\pairing\pairing_handler.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityPairingSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\record\security_record.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityRecordSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\record\security_record_database.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityRecordSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\security\record\security_record_storage.h">
+      <Filter>BluetoothSecuritySources\BluetoothSecurityRecordSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\classic_device.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\config_cache.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\config_cache_helper.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\config_keys.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\device.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\le_device.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\legacy_config_file.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\mutation.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\mutation_entry.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\serializable.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\storage\storage_module.h">
+      <Filter>BluetoothStorageSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\sysprops\sysprops_module.h">
+      <Filter>BluetoothSyspropsSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_dumper.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_dumper_flatbuffer.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_jniloop.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\module_mainloop.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\stack_manager.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\address.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\hci\class_of_device.h">
+      <Filter>BluetoothHciSources</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

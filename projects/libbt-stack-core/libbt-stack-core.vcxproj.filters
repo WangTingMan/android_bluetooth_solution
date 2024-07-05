@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="acl">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="arbiter">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="btm">
+      <UniqueIdentifier>{82dc1ce5-1ac0-41df-b58a-2e1c09a94e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btu">
+      <UniqueIdentifier>{51084d9a-0143-447d-b713-24f8529a3b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eatt">
+      <UniqueIdentifier>{27cb778d-eef7-482d-ad2e-1476d842127c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gap">
+      <UniqueIdentifier>{f2e7f0c7-fa6f-41b8-87ce-404f5e646d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gatt">
+      <UniqueIdentifier>{a13a0897-004f-4307-92c3-971187f5517a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hcic">
+      <UniqueIdentifier>{069a1727-c4f1-4eaf-a6a6-74ebbbd28a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="l2cap">
+      <UniqueIdentifier>{0926b38f-3d81-4f59-a510-45d3b533e3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metrics">
+      <UniqueIdentifier>{eead7820-a9c0-4524-aa84-3fb7f2b21b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rfcomm">
+      <UniqueIdentifier>{f7e2bca4-a417-497c-9680-8f7de630068f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="smp">
+      <UniqueIdentifier>{577106bb-a6c0-495e-9f49-4a68c98a075b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="srvc">
+      <UniqueIdentifier>{1e997b12-15a3-4175-8505-3b6956e2618b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LegacyStackSdp">
+      <UniqueIdentifier>{5cb81ed0-2d5d-4388-a288-8d6fc4710c29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\acl\acl.cc">
+      <Filter>acl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\acl\ble_acl.cc">
+      <Filter>acl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\acl\btm_acl.cc">
+      <Filter>acl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\acl\btm_pm.cc">
+      <Filter>acl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\arbiter\acl_arbiter.cc">
+      <Filter>arbiter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\ble_scanner_hci_interface.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_addr.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_adv_filter.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_bgconn.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_cont_energy.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_gap.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_privacy.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_scanner.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_ble_sec.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_client_interface.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_dev.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_devctl.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_inq.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_iot_config.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_iso.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_main.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_sco.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_sco_hci.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_sco_hfp_hal.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_sec.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_sec_cb.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\btm_security_client_interface.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\security_event_parser.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btu\btu_event.cc">
+      <Filter>btu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btu\btu_hcif.cc">
+      <Filter>btu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\eatt\eatt.cc">
+      <Filter>eatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gap\gap_ble.cc">
+      <Filter>gap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gap\gap_conn.cc">
+      <Filter>gap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\att_protocol.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\connection_manager.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_api.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_attr.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_auth.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_cl.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_db.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_main.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_sr.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_sr_hash.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\gatt\gatt_utils.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\hcic\hciblecmds.cc">
+      <Filter>hcic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\hcic\hcicmds.cc">
+      <Filter>hcic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_api.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_ble.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_ble_conn_params.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_csm.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_fcr.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_link.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_main.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_utils.cc">
+      <Filter>l2cap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\metrics\stack_metrics_logging.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\port_api.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\port_rfc.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\port_utils.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_l2cap_if.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_mx_fsm.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_port_fsm.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_port_if.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_ts_frames.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_utils.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\p_256_curvepara.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\p_256_ecc_pp.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\p_256_multprecision.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_act.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_api.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_br_main.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_keys.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_l2c.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_main.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\smp\smp_utils.cc">
+      <Filter>smp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\srvc\srvc_dis.cc">
+      <Filter>srvc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\srvc\srvc_eng.cc">
+      <Filter>srvc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_api.cc">
+      <Filter>LegacyStackSdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_db.cc">
+      <Filter>LegacyStackSdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_discovery.cc">
+      <Filter>LegacyStackSdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_main.cc">
+      <Filter>LegacyStackSdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_server.cc">
+      <Filter>LegacyStackSdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_utils.cc">
+      <Filter>LegacyStackSdp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\acl\acl.h">
+      <Filter>acl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\acl\peer_packet_types.h">
+      <Filter>acl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\arbiter\acl_arbiter.h">
+      <Filter>arbiter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\eatt\eatt.h">
+      <Filter>eatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\eatt\eatt_impl.h">
+      <Filter>eatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\gatt\connection_manager.h">
+      <Filter>gatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\gatt\gatt_int.h">
+      <Filter>gatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\l2cap\l2c_int.h">
+      <Filter>l2cap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\port_int.h">
+      <Filter>rfcomm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_event.h">
+      <Filter>rfcomm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_int.h">
+      <Filter>rfcomm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_state.h">
+      <Filter>rfcomm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\smp\p_256_ecc_pp.h">
+      <Filter>smp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\smp\p_256_multprecision.h">
+      <Filter>smp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\smp\smp_int.h">
+      <Filter>smp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\srvc\srvc_dis_int.h">
+      <Filter>srvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\srvc\srvc_eng_int.h">
+      <Filter>srvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\sdp\sdp_discovery_db.h">
+      <Filter>LegacyStackSdp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\sdp\sdpint.h">
+      <Filter>LegacyStackSdp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

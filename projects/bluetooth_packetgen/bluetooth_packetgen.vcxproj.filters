@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="fields">
+      <UniqueIdentifier>{38f99820-b331-41f3-aae0-424f532abfce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fields\header">
+      <UniqueIdentifier>{d271bb9f-47f4-4ce4-8241-6848385b50da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\checksum_def.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\custom_field_def.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\enum_def.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\enum_gen.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\gen_cpp.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\main.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\packet_def.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\packet_dependency.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\parent_def.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\struct_def.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\struct_parser_generator.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\array_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\body_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\checksum_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\checksum_start_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\count_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\custom_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\custom_field_fixed_size.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\enum_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\fixed_enum_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\fixed_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\fixed_scalar_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\group_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\packet_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\padding_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\payload_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\reserved_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\scalar_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\size_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\struct_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\variable_length_struct_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\vector_field.cc">
+      <Filter>fields</Filter>
+    </ClCompile>
+    <ClCompile Include="language_y.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="language_l.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\checksum_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\custom_field_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\declarations.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\enum_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\enum_gen.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\field_list.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\logging.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\packet_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\packet_dependency.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\parent_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\parse_location.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\size.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\struct_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\struct_parser_generator.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\type_def.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\util.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\all_fields.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\array_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\body_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\checksum_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\checksum_start_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\count_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\custom_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\custom_field_fixed_size.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\enum_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\fixed_enum_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\fixed_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\fixed_scalar_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\group_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\packet_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\padding_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\vector_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\variable_length_struct_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\struct_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\size_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\scalar_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\reserved_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\gd\packet\parser\fields\payload_field.h">
+      <Filter>fields\header</Filter>
+    </ClInclude>
+    <ClInclude Include="language_y.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="location.hh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="position.hh">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

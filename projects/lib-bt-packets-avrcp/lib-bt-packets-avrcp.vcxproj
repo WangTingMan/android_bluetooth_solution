@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\avrcp_browse_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\avrcp_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\avrcp_reject_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\capabilities_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\change_path.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\general_reject_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\get_current_player_application_setting_value.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\get_element_attributes_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\get_folder_items.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\get_item_attributes.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\get_play_status_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\get_total_number_of_items.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\list_player_application_setting_attributes.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\list_player_application_setting_values.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\pass_through_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\play_item.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\register_notification_packet.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\set_absolute_volume.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\set_addressed_player.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\set_browsed_player.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\set_player_application_setting_value.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\packet\avrcp\vendor_packet.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\avrcp_browse_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\avrcp_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\avrcp_reject_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\capabilities_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\change_path.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\general_reject_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\get_current_player_application_setting_value.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\get_element_attributes_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\get_folder_items.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\get_item_attributes.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\get_play_status_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\get_total_number_of_items.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\list_player_application_setting_attributes.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\list_player_application_setting_values.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\pass_through_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\play_item.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\register_notification_packet.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\set_absolute_volume.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\set_addressed_player.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\set_browsed_player.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\set_player_application_setting_value.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\packet\avrcp\vendor_packet.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{205b2e76-2809-4e21-b893-9d8b6cf1820e}</ProjectGuid>
+    <RootNamespace>libbtpacketsavrcp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\stack\include;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\flags\exported_include;$(SolutionDir)../generated;E:\VCLAB\component\chromebase;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\core\libcutils\include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/Zc:preprocessor /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

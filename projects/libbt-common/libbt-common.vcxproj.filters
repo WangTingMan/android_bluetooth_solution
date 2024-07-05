@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="bluetooth-metrics-proto">
+      <UniqueIdentifier>{accfed0e-514b-4e7c-b059-4c5f111291f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\address_obfuscator.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\message_loop_thread.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\metric_id_allocator.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\os_utils.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\repeating_timer.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\stop_watch_legacy.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\time_util.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\common\metrics.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\generated\bluetooth\metrics\bluetooth.pb.cc">
+      <Filter>bluetooth-metrics-proto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\address_obfuscator.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\id_generator.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\leaky_bonded_queue.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\lru.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\message_loop_thread.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\metric_id_allocator.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\metrics.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\os_utils.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\repeating_timer.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\state_machine.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\stop_watch_legacy.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\time_util.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\common\utils.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\generated\bluetooth\metrics\bluetooth.pb.h">
+      <Filter>bluetooth-metrics-proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="gatt">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="jv">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="rfcomm">
+      <UniqueIdentifier>{7acfcadf-a57f-4f35-9a2b-5b5c27f3d072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdp">
+      <UniqueIdentifier>{02fa9d5e-c581-4c52-bb76-c18cc3992697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sys">
+      <UniqueIdentifier>{ed8031d3-4e1b-410b-9e6b-55841b53479b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BtaDmSources">
+      <UniqueIdentifier>{ea5aa66f-5ec8-4420-82c7-30e74dcefa6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_act.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_api.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_cache.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_db_storage.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_main.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_queue.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_utils.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_act.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_api.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_main.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_queue.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_utils.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\database.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\database_builder.cc">
+      <Filter>gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\jv\bta_jv_act.cc">
+      <Filter>jv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\jv\bta_jv_api.cc">
+      <Filter>jv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\rfcomm\bta_rfcomm_scn.cc">
+      <Filter>rfcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp.cc">
+      <Filter>sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_act.cc">
+      <Filter>sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_api.cc">
+      <Filter>sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_cfg.cc">
+      <Filter>sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sys\bta_sys_conn.cc">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sys\bta_sys_main.cc">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sys\utl.cc">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_act.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_api.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_cfg.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_ci.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_device_search.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_legacy.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_gatt_client.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_main.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_pm.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_sec.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_sec_api.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_sdp.cc">
+      <Filter>BtaDmSources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_int.h">
+      <Filter>gatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_int.h">
+      <Filter>gatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\database.h">
+      <Filter>gatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\database_builder.h">
+      <Filter>gatt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\jv\bta_jv_int.h">
+      <Filter>jv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_int.h">
+      <Filter>sdp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\sys\bta_sys.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\sys\bta_sys_int.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_act.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_device_search.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_device_search_int.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_int.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_int_legacy.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_legacy.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_gatt_client.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_int.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_sec_int.h">
+      <Filter>BtaDmSources</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

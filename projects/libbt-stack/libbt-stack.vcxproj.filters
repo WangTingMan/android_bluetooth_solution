@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="a2dp">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="avct">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="avdt">
+      <UniqueIdentifier>{c487d4c5-3fa3-42f0-80cf-9bb2acf86da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="avrc">
+      <UniqueIdentifier>{663476a3-fb7e-4334-a868-6b5233921434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bnep">
+      <UniqueIdentifier>{a6be45e5-cf28-4a21-aaba-271e7f3a8f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btm">
+      <UniqueIdentifier>{fb62d148-2403-4e9c-85aa-5ef356df9455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hid">
+      <UniqueIdentifier>{7fe4ba5c-5268-45df-8238-7a44528e2115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pan">
+      <UniqueIdentifier>{22d38479-c633-4e85-bbc1-9bee2a87fed5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_int.h">
+      <Filter>a2dp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\avct\avct_defs.h">
+      <Filter>avct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\avct\avct_int.h">
+      <Filter>avct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\avdt\avdt_defs.h">
+      <Filter>avdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\avdt\avdt_int.h">
+      <Filter>avdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\avrc\avrc_int.h">
+      <Filter>avrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\bnep\bnep_int.h">
+      <Filter>bnep</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\hid\hid_conn.h">
+      <Filter>hid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\hid\hidd_int.h">
+      <Filter>hid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\hid\hidh_int.h">
+      <Filter>hid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\pan\pan_int.h">
+      <Filter>pan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_aac.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_aac_decoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_aac_encoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_api.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_codec_config.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_ext.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_sbc.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_sbc_decoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_sbc_encoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_sbc_up_sample.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_aptx.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_aptx_encoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_aptx_hd.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_aptx_hd_encoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_ldac.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_ldac_decoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_ldac_encoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_opus.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_opus_decoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\a2dp\a2dp_vendor_opus_encoder.cc">
+      <Filter>a2dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_api.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_bcb_act.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_ccb.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_l2c.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_l2c_br.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_lcb.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avct\avct_lcb_act.cc">
+      <Filter>avct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_ad.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_api.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_ccb.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_ccb_act.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_l2c.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_msg.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_scb.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avdt\avdt_scb_act.cc">
+      <Filter>avdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_api.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_bld_ct.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_bld_tg.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_opt.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_pars_ct.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_pars_tg.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_sdp.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\avrc\avrc_utils.cc">
+      <Filter>avrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\bnep\bnep_api.cc">
+      <Filter>bnep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\bnep\bnep_main.cc">
+      <Filter>bnep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\bnep\bnep_utils.cc">
+      <Filter>bnep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\hfp_lc3_decoder.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\hfp_lc3_encoder.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\hfp_msbc_decoder.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\btm\hfp_msbc_encoder.cc">
+      <Filter>btm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\hid\hidd_api.cc">
+      <Filter>hid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\hid\hidd_conn.cc">
+      <Filter>hid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\hid\hidh_api.cc">
+      <Filter>hid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\hid\hidh_conn.cc">
+      <Filter>hid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\pan\pan_api.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\pan\pan_main.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\pan\pan_utils.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

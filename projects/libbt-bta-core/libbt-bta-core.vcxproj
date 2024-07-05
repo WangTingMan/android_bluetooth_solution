@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_act.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_api.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_cfg.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_ci.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_device_search.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_legacy.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_sdp.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_gatt_client.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_main.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_pm.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_sec.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_sec_api.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_act.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_api.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_cache.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_db_storage.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_main.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_queue.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_utils.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_act.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_api.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_main.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_queue.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_utils.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\database.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\gatt\database_builder.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\jv\bta_jv_act.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\jv\bta_jv_api.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\rfcomm\bta_rfcomm_scn.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_act.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_api.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_cfg.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sys\bta_sys_conn.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sys\bta_sys_main.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\sys\utl.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_act.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_device_search.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_device_search_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_int_legacy.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_disc_legacy.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_gatt_client.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\dm\bta_dm_sec_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\bta_gattc_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\bta_gatts_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\database.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\gatt\database_builder.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\jv\bta_jv_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\sdp\bta_sdp_int.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\sys\bta_sys.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\sys\bta_sys_int.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2e15342b-582a-4224-87e9-d046575cffbe}</ProjectGuid>
+    <RootNamespace>libbtbtacore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\stack\include;$(SolutionDir)../Bluetooth\system\include\hardware\avrcp;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\bta\include;$(SolutionDir)../Bluetooth\system\bta;$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\stack\btm;$(SolutionDir)../Bluetooth\sysprop\exported_include;$(SolutionDir)../Bluetooth\flags\exported_include;$(SolutionDir)../generated;$(SolutionDir)../generated\sysprop\include;E:\VCLAB\component\chromebase;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\flatbuffers\include;E:\VCLAB\component\system\media\audio\include;E:\VCLAB\component\system\external\liblc3\include;E:\VCLAB\component\protobuf\src;E:\VCLAB\component\boringssl\src\include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;NOMINMAX;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

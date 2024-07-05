@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ag">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ar">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="av">
+      <UniqueIdentifier>{31c6575b-6736-4058-8591-7cd2d3cf077c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="csis">
+      <UniqueIdentifier>{c1d70f18-636b-4473-b851-d46aeef01aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="groups">
+      <UniqueIdentifier>{22cabde5-e082-4278-a9c7-ee1926bffd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="has">
+      <UniqueIdentifier>{9e531cda-251e-44ee-ac8e-2d86bf5b0685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hd">
+      <UniqueIdentifier>{3fd2d3c5-8926-49aa-8f35-359bdb3b5b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hearing_aid">
+      <UniqueIdentifier>{a3f15993-ebf3-4032-b447-7a661b65052b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hf_client">
+      <UniqueIdentifier>{5a7ee890-2ff4-42bf-8aa1-0e751ced19db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hfp">
+      <UniqueIdentifier>{60cf8e42-aa70-47a8-a882-8fec73d238a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hh">
+      <UniqueIdentifier>{67c0ae1d-7015-432b-860a-d713459bbfa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="le_audio">
+      <UniqueIdentifier>{12da3c28-4070-4161-b830-6119b02ab4c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="le_audio\header">
+      <UniqueIdentifier>{2768547d-e01a-4cf0-a837-f5415b6b0dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="le_audio\audio_hal_client">
+      <UniqueIdentifier>{b029fd58-0ffa-43cb-801f-a4b558cf0600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="le_audio\broadcaster">
+      <UniqueIdentifier>{89e6af28-864e-4ac7-9b99-4568d711ff0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pan">
+      <UniqueIdentifier>{1a9b1f24-7055-4e3f-b267-618bf1d81e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ras">
+      <UniqueIdentifier>{faff32cc-8344-4442-a58f-bd460e833708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vc">
+      <UniqueIdentifier>{ca800807-82f7-416e-9d3c-a35731adc93e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_act.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_api.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_at.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_cfg.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_cmd.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_main.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_rfc.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_sco.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_sdp.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_swb_aptx.cc">
+      <Filter>ag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ar\bta_ar.cc">
+      <Filter>ar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_aact.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_act.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_api.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_cfg.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_ci.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_main.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\av\bta_av_ssm.cc">
+      <Filter>av</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\csis\csis_client.cc">
+      <Filter>csis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\groups\groups.cc">
+      <Filter>groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\has\has_client.cc">
+      <Filter>has</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\has\has_ctp.cc">
+      <Filter>has</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\has\has_journal.cc">
+      <Filter>has</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\has\has_preset.cc">
+      <Filter>has</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\has\has_types.cc">
+      <Filter>has</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hd\bta_hd_act.cc">
+      <Filter>hd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hd\bta_hd_api.cc">
+      <Filter>hd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hd\bta_hd_main.cc">
+      <Filter>hd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hearing_aid\hearing_aid.cc">
+      <Filter>hearing_aid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hearing_aid\hearing_aid_audio_source.cc">
+      <Filter>hearing_aid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_act.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_api.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_at.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_main.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_rfc.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_sco.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_sdp.cc">
+      <Filter>hf_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hfp\bta_hfp_api.cc">
+      <Filter>hfp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_act.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_api.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_cfg.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_le.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_main.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_utils.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\client.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\client_parser.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\codec_interface.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\codec_manager.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\content_control_id_keeper.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\device_groups.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\devices.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\hal_verifier.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_health_status.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_log_history.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_set_configuration_provider_json.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_types.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_utils.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\metrics_collector.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\state_machine.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\storage_helper.cc">
+      <Filter>le_audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\audio_hal_client\audio_sink_hal_client.cc">
+      <Filter>le_audio\audio_hal_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\audio_hal_client\audio_source_hal_client.cc">
+      <Filter>le_audio\audio_hal_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\broadcast_configuration_provider.cc">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\broadcaster.cc">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\broadcaster_types.cc">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\state_machine.cc">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\pan\bta_pan_act.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\pan\bta_pan_api.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\pan\bta_pan_ci.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\pan\bta_pan_main.cc">
+      <Filter>pan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ras\ras_client.cc">
+      <Filter>ras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ras\ras_server.cc">
+      <Filter>ras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\ras\ras_utils.cc">
+      <Filter>ras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\vc\device.cc">
+      <Filter>vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\vc\vc.cc">
+      <Filter>vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_headtracker.cc">
+      <Filter>hh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_at.h">
+      <Filter>ag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\ag\bta_ag_int.h">
+      <Filter>ag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\ar\bta_ar_int.h">
+      <Filter>ar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\av\bta_av_int.h">
+      <Filter>av</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\csis\csis_types.h">
+      <Filter>csis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\has\has_ctp.h">
+      <Filter>has</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\has\has_journal.h">
+      <Filter>has</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\has\has_preset.h">
+      <Filter>has</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\has\has_types.h">
+      <Filter>has</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\hd\bta_hd_int.h">
+      <Filter>hd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_at.h">
+      <Filter>hf_client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\hf_client\bta_hf_client_int.h">
+      <Filter>hf_client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\hh\bta_hh_int.h">
+      <Filter>hh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\client_parser.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\codec_interface.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\codec_manager.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\content_control_id_keeper.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\device_groups.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\devices.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_health_status.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_log_history.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_set_configuration_provider.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_types.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\le_audio_utils.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\metrics_collector.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\state_machine.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\storage_helper.h">
+      <Filter>le_audio\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\audio_hal_client\audio_hal_client.h">
+      <Filter>le_audio\audio_hal_client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\broadcast_configuration_provider.h">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\broadcaster_types.h">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\le_audio\broadcaster\state_machine.h">
+      <Filter>le_audio\broadcaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\pan\bta_pan_int.h">
+      <Filter>pan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\ras\ras_types.h">
+      <Filter>ras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\vc\devices.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\bta\vc\types.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

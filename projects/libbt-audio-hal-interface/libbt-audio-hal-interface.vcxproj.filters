@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="aidl">
+      <UniqueIdentifier>{f941b52e-a2e5-4f9d-bc06-8d0729387bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aidl\header">
+      <UniqueIdentifier>{51098d04-bbd0-49df-a4b5-5f42a18cfb00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hidl">
+      <UniqueIdentifier>{f102f868-b5cf-44d3-aa0b-064c9de6a16e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hidl\header">
+      <UniqueIdentifier>{456535d2-3759-453a-9dfe-b810de0187c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\a2dp_encoding.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hal_version_manager.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hearing_aid_software_encoding.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hfp_client_interface.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\le_audio_software.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\a2dp_encoding_aidl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\a2dp_provider_info.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\bluetooth_audio_port_impl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\client_interface_aidl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\codec_status_aidl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\hearing_aid_software_encoding_aidl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\hfp_client_interface_aidl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\le_audio_software_aidl.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\provider_info.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\a2dp_encoding_hidl.cc">
+      <Filter>hidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\client_interface_hidl.cc">
+      <Filter>hidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\codec_status_hidl.cc">
+      <Filter>hidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\hearing_aid_software_encoding_hidl.cc">
+      <Filter>hidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\le_audio_software_hidl.cc">
+      <Filter>hidl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\le_audio_utils.cc">
+      <Filter>aidl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\a2dp_encoding.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hal_version_manager.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hearing_aid_software_encoding.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hfp_client_interface.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\le_audio_software.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\a2dp_encoding_aidl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\a2dp_provider_info.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\a2dp_transport.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\audio_aidl_interfaces.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\audio_ctrl_ack.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\bluetooth_audio_port_impl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\client_interface_aidl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\codec_status_aidl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\hearing_aid_software_encoding_aidl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\hfp_client_interface_aidl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\le_audio_software_aidl.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\provider_info.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\aidl\transport_instance.h">
+      <Filter>aidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\a2dp_encoding_hidl.h">
+      <Filter>hidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\client_interface_hidl.h">
+      <Filter>hidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\codec_status_hidl.h">
+      <Filter>hidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\hearing_aid_software_encoding_hidl.h">
+      <Filter>hidl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\audio_hal_interface\hidl\le_audio_software_hidl.h">
+      <Filter>hidl\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
