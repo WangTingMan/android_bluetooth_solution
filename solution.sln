@@ -89,7 +89,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{73759F29
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bluetooth_packetgen", "projects\bluetooth_packetgen\bluetooth_packetgen.vcxproj", "{1CEBFE66-119F-471F-A690-ECABCD9DA06F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbluetoothinterface", "projects\libbluetoothinterface\libbluetoothinterface.vcxproj", "{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbluetoothinterface_ori", "projects\libbluetoothinterface_ori\libbluetoothinterface_ori.vcxproj", "{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -419,14 +419,14 @@ Global
 		{1CEBFE66-119F-471F-A690-ECABCD9DA06F}.Release|x64.Build.0 = Release|x64
 		{1CEBFE66-119F-471F-A690-ECABCD9DA06F}.Release|x86.ActiveCfg = Release|Win32
 		{1CEBFE66-119F-471F-A690-ECABCD9DA06F}.Release|x86.Build.0 = Release|Win32
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Debug|x64.ActiveCfg = Debug|x64
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Debug|x64.Build.0 = Debug|x64
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Debug|x86.ActiveCfg = Debug|Win32
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Debug|x86.Build.0 = Debug|Win32
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Release|x64.ActiveCfg = Release|x64
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Release|x64.Build.0 = Release|x64
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Release|x86.ActiveCfg = Release|Win32
-		{6BBA8E6E-31DB-42A4-BE9A-B685B7E8EC86}.Release|x86.Build.0 = Release|Win32
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Debug|x64.ActiveCfg = Debug|x64
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Debug|x64.Build.0 = Debug|x64
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Debug|x86.ActiveCfg = Debug|Win32
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Debug|x86.Build.0 = Debug|Win32
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x64.ActiveCfg = Release|x64
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x64.Build.0 = Release|x64
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x86.ActiveCfg = Release|Win32
+		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

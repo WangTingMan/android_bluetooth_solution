@@ -1,4 +1,7 @@
+#if __has_include(<win_bluetooth.h>)
 #include <win_bluetooth.h>
+#define WIN_BLUETOOTH_ENABLED
+#endif
 
 #include <atomic>
 #include <thread>
@@ -8,11 +11,15 @@
 
 #include "hci_log_win_side.h"
 
+#include "bluetooth/log.h"
+
 #define USE_LOCAL_HCI_LAYRER_MODULE
 
 #ifdef USE_LOCAL_HCI_LAYRER_MODULE
 
+#ifdef WIN_BLUETOOTH_ENABLED
 #pragma comment(lib, "libWinBluetooth.lib")
+#endif
 
 #if defined(__ANDROID__)
 #define LOG_FOLDER_NAME "/data/misc/bluetooth/logs/"
@@ -25,7 +32,9 @@
 
 #define PRING_HCI_DETAIL_LOG
 
+#ifdef WIN_BLUETOOTH_ENABLED
 win_bluetooth_hci_callback_t hci_callback_s;
+#endif
 std::atomic_bool s_initialized = false;
 std::promise<void> s_initial_promise;
 std::function<void( char, char*, uint16_t )> s_hci_data_callback;
@@ -62,12 +71,18 @@ void hci_initialize
     }
 
     s_hci_data_callback = call_back;
+#ifdef WIN_BLUETOOTH_ENABLED
     hci_callback_s.chipset_initialization_completed = &initialization_complete;
     hci_callback_s.handle_data_from_controller = &handle_data_from_controller;
     get_win_bluetooth_hci_interface()->register_callback( &hci_callback_s );
 
     s_initial_promise = std::move( initial_promise );
-    get_win_bluetooth_hci_interface()->initialize();
+    int ini_ret = get_win_bluetooth_hci_interface()->initialize();
+    if (ini_ret == -1)
+    {
+        bluetooth::log::error("Cannot initialize local usb bluetooth adaptor");
+    }
+#endif
 }
 
 bool hci_transmit
@@ -84,11 +99,13 @@ bool hci_transmit
         int x = 0;
         x = 90;
     }
+#ifdef WIN_BLUETOOTH_ENABLED
     int size = get_win_bluetooth_hci_interface()
         ->send_data_to_controller( a_type,
                                    reinterpret_cast<uint8_t*>( a_buffer ),
                                    a_size
                                  );
+#endif
     return true;
 }
 
