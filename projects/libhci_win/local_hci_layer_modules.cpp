@@ -22,9 +22,7 @@
 #endif
 
 #if defined(__ANDROID__)
-#define LOG_FOLDER_NAME "/data/misc/bluetooth/logs/"
 #else 
-#define LOG_FOLDER_NAME "D:/bluetooth/"
 #define ALOG(...)
 #endif
 

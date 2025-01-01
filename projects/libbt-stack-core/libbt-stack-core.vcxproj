@@ -84,6 +84,7 @@
     <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_port_if.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_ts_frames.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_utils.cc" />
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rnr\remote_name_request.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_api.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_db.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_discovery.cc" />
@@ -116,6 +117,7 @@
     <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_event.h" />
     <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_int.h" />
     <ClInclude Include="..\..\..\Bluetooth\system\stack\rfcomm\rfc_state.h" />
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\rnr\remote_name_request.h" />
     <ClInclude Include="..\..\..\Bluetooth\system\stack\sdp\sdpint.h" />
     <ClInclude Include="..\..\..\Bluetooth\system\stack\sdp\sdp_discovery_db.h" />
     <ClInclude Include="..\..\..\Bluetooth\system\stack\smp\p_256_ecc_pp.h" />
@@ -217,7 +219,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;LIBBLUETOOTH_IMPLEMENTATION;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>

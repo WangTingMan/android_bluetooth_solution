@@ -1,6 +1,5 @@
 
 #pragma comment(lib, "avrcp-target-service.lib")
-#pragma comment(lib, "libaudio-a2dp-hw-utils.lib")
 #pragma comment(lib, "libbluetooth_crypto_toolbox.lib")
 #pragma comment(lib, "libbluetooth_gd.lib")
 #pragma comment(lib, "libbluetooth_log.lib")
@@ -67,6 +66,7 @@
 #pragma comment(lib, "libldacdec.lib")
 #pragma comment(lib, "libprotobuf-lite.lib")
 #pragma comment(lib, "libstatssocket.lib")
+#pragma comment(lib, "libutils_binder_sdk.lib")
 
 /**
  * from bp file: android/app/Android.bp:

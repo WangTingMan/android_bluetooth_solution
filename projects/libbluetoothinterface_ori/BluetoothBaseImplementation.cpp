@@ -16,11 +16,9 @@
 #include <windows.h>
 
 #include <cutils/properties.h>
+#include <android/log.h>
 
 #include <filesystem>
-
-#define FOLDER L"E:\\Projects\\google_bluetooth\\android_bluetooth_solution\\x64\\Debug\\"
-#define MODULE_NAME L"libbluetooth.dll"
 
 extern "C"
 {
@@ -39,6 +37,12 @@ void _adapter_state_changed_callback(bt_state_t state)
     std::shared_ptr<ExecutbleEvent> event = std::make_shared<ExecutbleEvent>();
     event->SetExecutableFunction(std::bind(&Adaptor::AdapterStateChanged, std::ref(Adaptor::GetInstance()), BT_STATE_ON == state));
     PageManager::GetInstance().PostEvent(event);
+
+    auto fun = std::bind( &BluetoothBaseImplementation::LoadAllPairedDevices,
+                          std::ref( BluetoothBaseImplementation::GetInstance() ) );
+    std::shared_ptr<ExecutbleEvent> ch_event = std::make_shared<ExecutbleEvent>();
+    ch_event->SetExecutableFunction( fun );
+    PageManager::GetInstance().PostEvent( ch_event );
 }
 
 void _adapter_properties_callback
@@ -82,40 +86,6 @@ void _adapter_properties_callback
             PageManager::GetInstance().PostEvent(event);
         }
         break;
-        case BT_PROPERTY_ADAPTER_SCAN_MODE:
-        {
-            bt_scan_mode_t* mode = reinterpret_cast<bt_scan_mode_t*>(properties[i].val);
-            bool discoveriable = false;
-            bool connectable = false;
-            switch (*mode)
-            {
-            case BT_SCAN_MODE_NONE:
-                discoveriable = false;
-                connectable = false;
-                break;
-            case BT_SCAN_MODE_CONNECTABLE:
-                discoveriable = false;
-                connectable = true;
-                break;
-            case BT_SCAN_MODE_CONNECTABLE_DISCOVERABLE:
-                discoveriable = true;
-                connectable = true;
-                break;
-            default:
-                break;
-            }
-            auto fun = std::bind
-            (
-                &Adaptor::OnLocalSettingsChanged,
-                std::ref(Adaptor::GetInstance()),
-                discoveriable,
-                connectable
-            );
-            std::shared_ptr< ExecutbleEvent > event = std::make_shared<ExecutbleEvent>();
-            event->SetExecutableFunction(fun);
-            PageManager::GetInstance().PostEvent(event);
-        }
-        break;
         case BT_PROPERTY_ADAPTER_BONDED_DEVICES:
         {
             RawAddress* _address = reinterpret_cast<RawAddress*>(properties[i].val);
@@ -145,7 +115,26 @@ void _adapter_properties_callback
             int totalUuidCnt = properties[i].len;
         }
         break;
+        case BT_PROPERTY_LOCAL_LE_FEATURES:
+        {
+            uint16_t advs = 0;
+            bt_local_le_features_t* le_feature = reinterpret_cast<bt_local_le_features_t*>( properties[i].val );
+            advs = le_feature->total_trackable_advertisers;
+        }
+        break;
+        case BT_PROPERTY_ADAPTER_DISCOVERABLE_TIMEOUT:
+        {
+            uint32_t timeout = 0;
+            uint32_t* p_out = nullptr;
+            p_out = reinterpret_cast<uint32_t*>( properties[i].val );
+            timeout = *p_out;
+        }
+        break;
         default:
+        {
+            int x = 0;
+            x = 90;
+        }
             break;
         }
     }
@@ -271,11 +260,6 @@ void _device_found_callback(int num_properties,
         {
             record = reinterpret_cast<bt_service_record_t*>(property_->val);
             //memcpy(&remoteDevice.service_record, record, sizeof bt_service_record_t);
-        }
-        break;
-        case BT_PROPERTY_ADAPTER_SCAN_MODE:
-        {
-            mode_ = reinterpret_cast<bt_scan_mode_t*>(property_->val);
         }
         break;
         case BT_PROPERTY_ADAPTER_BONDED_DEVICES:
@@ -529,7 +513,14 @@ BluetoothBaseImplementation::BluetoothBaseImplementation()
 
 void BluetoothBaseImplementation::InitPlatform()
 {
+    __set_default_log_file_name( "D:/bluetooth/google_stack.log", true );
     parse_property_from_ini( "D:/bluetooth/setting/settings.ini" );
+    property_set( "persist.bluetooth.bt_config_path", "D:/bluetooth/setting/bt_config.conf" );
+    property_set( "persist.bluetooth.btsnoop_hci_path", "D:/bluetooth/btsnoop_hci.log" );
+    property_set( "persist.bluetooth.btsnooz_hci_path", "D:/bluetooth/btsnooz_hci.log" );
+    property_set( "persist.bluetooth.bt_stack_path", "D:/bluetooth/setting/bt_stack.conf" );
+    property_set( "bluetooth.core.le.vendor_capabilities.enabled", "false" );
+    property_set( "persist.bluetooth.btsnooplogmode", "full" );
     binder_server_init();
 }
 
@@ -653,8 +644,6 @@ bool BluetoothBaseImplementation::SetLocalDeviceSettings
     )
 {
     bool r = false;
-    bt_property_t property_;
-    property_.type = BT_PROPERTY_ADAPTER_SCAN_MODE;
     bt_scan_mode_t mode;
     if (a_connectable)
     {
@@ -671,11 +660,16 @@ bool BluetoothBaseImplementation::SetLocalDeviceSettings
     {
         mode = BT_SCAN_MODE_NONE;
     }
-    property_.val = &mode;
-    property_.len = sizeof bt_scan_mode_t;
+
     if (m_interface)
     {
-        m_interface->set_adapter_property(&property_);
+        m_interface->set_scan_mode( mode );
+        std::shared_ptr<ExecutbleEvent> event = std::make_shared<ExecutbleEvent>
+            (
+            std::bind( &Adaptor::OnLocalSettingsChanged, std::ref( Adaptor::GetInstance() ),
+                       a_discoverable, a_connectable )
+            );
+        PageManager::GetInstance().PostEvent( std::move( event ) );
     }
     return r;
 }
@@ -747,6 +741,12 @@ void BluetoothBaseImplementation::OnPairedDeviceAddressReceived
     }
 }
 
+extern "C"
+{
+    _declspec(dllimport) void* GetAndroidBluetoothInterface();
+    _declspec(dllimport) void AndroidBluetoothInterfaceTest();
+}
+
 bool BluetoothBaseImplementation::LoadBluetoothLibrary()
 {
     if (m_interface || s_test)
@@ -754,46 +754,13 @@ bool BluetoothBaseImplementation::LoadBluetoothLibrary()
         return true;
     }
 
-    std::filesystem::path path(FOLDER MODULE_NAME);
-    if( !std::filesystem::exists(path) )
-    {
-        char buffer[256] = { 0 };
-        int ret = property_get("persist.bluetooth.local.libpath", buffer, nullptr);
-        if (ret < 1)
-        {
-            LogError() << "Please set bluetooth library into property: "
-                << "persist.bluetooth.local.libpath";
-            return false;
-        }
-
-        std::filesystem::path path_property(buffer);
-        if (!std::filesystem::exists(path_property))
-        {
-            LogError() << "No such file: " << buffer;
-            return false;
-        }
-        path = std::move(path_property);
-    }
-
-    HMODULE hMod = LoadLibrary(path.wstring().c_str());
-    if (hMod == NULL)
-    {
-        LogError() << "Cannot load library " << path.string();
-        return false;
-    }
-
-    FARPROC pro = GetProcAddress(hMod, "GetAndroidBluetoothInterface");
-    GetInterfaceType get = (GetInterfaceType)pro;
-    if (get == nullptr)
-    {
-        LogError() << "Cannot find symbol GetAndroidBluetoothInterface from library: "
-            << path.string();
-        return false;
-    }
-
-    pro = GetProcAddress(hMod, "test");
-    s_test = (test_lib_bluetooth)pro;
-
-    m_interface = reinterpret_cast<bt_interface_t*>(get());
+    m_interface = reinterpret_cast<bt_interface_t*>( GetAndroidBluetoothInterface() );
+    s_test = &AndroidBluetoothInterfaceTest;
     return true;
 }
+
+void BluetoothBaseImplementation::LoadAllPairedDevices()
+{
+    m_interface->get_adapter_properties();
+}
+

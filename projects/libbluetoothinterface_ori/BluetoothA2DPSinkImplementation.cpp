@@ -8,6 +8,8 @@
 #include <Zhen/PageManager.h>
 #include <Zhen/ExecutbleEvent.h>
 
+#include <btif/include/btif_av.h>
+
 /** Callback for connection state change.
 * state will have one of the values from btav_connection_state_t
 */
@@ -120,12 +122,9 @@ BluetoothA2DPSinkImplementation& BluetoothA2DPSinkImplementation::GetInstance()
 
 void BluetoothA2DPSinkImplementation::Init()
 {
+    bt_status_t status;
     bt_interface_t* interfaceBt = nullptr;
     interfaceBt = BluetoothBaseImplementation::GetInstance().GetBtInterface();
-
-    btav_sink_interface_t const* inter =
-        reinterpret_cast<btav_sink_interface_t const*>(interfaceBt->get_profile_interface(BT_PROFILE_ADVANCED_AUDIO_SINK_ID));
-    m_a2dpSinkInterface = const_cast<btav_sink_interface_t*>(inter);
 
     memset(&m_avCallback, 0x00, sizeof m_avCallback);
     m_avCallback.size = sizeof btav_sink_callbacks_t;
@@ -133,7 +132,8 @@ void BluetoothA2DPSinkImplementation::Init()
     m_avCallback.audio_state_cb = impl_btav_sink_audio_state_callback;
     m_avCallback.connection_state_cb = impl_btav_sink_connection_state_callback;
 
-    m_a2dpSinkInterface->init(&m_avCallback, 1);
+    status = btif_av_sink_init( &m_avCallback, 1 );
+    return;
 }
 
 bool BluetoothA2DPSinkImplementation::Connect
@@ -141,9 +141,10 @@ bool BluetoothA2DPSinkImplementation::Connect
     BluetoothAddress a_address
     )
 {
+    bt_status_t status;
     RawAddress address;
     memcpy(address.address, a_address.address, BluetoothAddress::kLength);
-    m_a2dpSinkInterface->connect(address);
+    status = btif_av_sink_connect(address);
     return true;
 }
 
@@ -152,9 +153,10 @@ bool BluetoothA2DPSinkImplementation::disconnect
     BluetoothAddress a_address
     )
 {
+    bt_status_t status;
     RawAddress address;
     memcpy(address.address, a_address.address, BluetoothAddress::kLength);
-    m_a2dpSinkInterface->disconnect(address);
+    status = btif_av_sink_disconnect(address);
     return true;
 }
 
@@ -164,6 +166,6 @@ void BluetoothA2DPSinkImplementation::SetAudioFocus
     )
 {
     int granted = a_grant ? 1 : 0;
-    m_a2dpSinkInterface->set_audio_focus_state(granted);
+    btif_av_sink_set_audio_focus_state(granted);
 }
 

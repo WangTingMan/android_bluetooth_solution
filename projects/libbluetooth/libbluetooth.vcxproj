@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>$(SolutionDir)$(Platform)\$(Configuration);E:\VCLAB\component\x64\Debug;E:\VCLAB\libWinBluetooth\x64\Debug;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\include;E:\VCLAB\component\chromebase;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\include;E:\VCLAB\component\chromebase;E:\VCLAB\component\logging\liblog\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -15,14 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Bluetooth\system\audio_a2dp_hw\src\audio_a2dp_hw.cc">
-      <Filter>source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Bluetooth\system\audio_a2dp_hw\src\audio_a2dp_hw_utils.cc">
-      <Filter>source</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\..\Bluetooth\system\audio_a2dp_hw\include\audio_a2dp_hw.h">
       <Filter>header</Filter>
     </ClInclude>

@@ -616,7 +616,7 @@ BluetoothHFImplementation::BluetoothHFImplementation()
 
 void BluetoothHFImplementation::Init()
 {
-    if( !m_initialized )
+    if( m_initialized )
     {
         return;
     }

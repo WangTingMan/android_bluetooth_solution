@@ -11,7 +11,9 @@
 #pragma comment(lib,"libbinder.lib")
 #pragma comment(lib,"libutils.lib")
 #pragma comment(lib,"libcutils.lib")
+#pragma comment(lib,"liblog.lib")
 #pragma comment(lib,"libbinderwrapper.lib")
+#pragma comment(lib,"libbluetooth.lib")
 
 class BluetoothService : public BnBluetoothService
 {

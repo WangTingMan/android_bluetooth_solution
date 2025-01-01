@@ -12,7 +12,7 @@ struct alarm_t
 
 alarm_t* alarm_new( const char* name )
 {
-    uint32_t id = create_timer( []() {}, name );
+    uint32_t id = create_timer( []() {}, name, false );
     alarm_t* ret = new alarm_t;
     ret->id = id;
     return ret;
@@ -20,7 +20,10 @@ alarm_t* alarm_new( const char* name )
 
 alarm_t* alarm_new_periodic( const char* name )
 {
-    return alarm_new( name );
+    uint32_t id = create_timer( []() {}, name, true );
+    alarm_t* ret = new alarm_t;
+    ret->id = id;
+    return ret;
 }
 
 void alarm_free( alarm_t* alarm )

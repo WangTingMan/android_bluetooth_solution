@@ -30,7 +30,6 @@ public:
 
 private:
 
-    btav_sink_interface_t* m_a2dpSinkInterface = nullptr;
     btav_sink_callbacks_t m_avCallback;
 };
 

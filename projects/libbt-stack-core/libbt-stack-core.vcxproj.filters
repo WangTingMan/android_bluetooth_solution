@@ -49,6 +49,9 @@
     <Filter Include="LegacyStackSdp">
       <UniqueIdentifier>{5cb81ed0-2d5d-4388-a288-8d6fc4710c29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="rnr">
+      <UniqueIdentifier>{5ca54972-b438-424d-bf28-1df47396b665}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Bluetooth\system\stack\acl\acl.cc">
@@ -300,6 +303,9 @@
     <ClCompile Include="..\..\..\Bluetooth\system\stack\sdp\sdp_utils.cc">
       <Filter>LegacyStackSdp</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Bluetooth\system\stack\rnr\remote_name_request.cc">
+      <Filter>rnr</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Bluetooth\system\stack\acl\acl.h">
@@ -358,6 +364,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Bluetooth\system\stack\sdp\sdpint.h">
       <Filter>LegacyStackSdp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bluetooth\system\stack\rnr\remote_name_request.h">
+      <Filter>rnr</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

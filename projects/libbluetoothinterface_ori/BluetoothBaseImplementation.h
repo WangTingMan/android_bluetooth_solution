@@ -57,6 +57,8 @@ public:
         return m_interface;
     }
 
+    void LoadAllPairedDevices();
+
 private:
 
     bool LoadBluetoothLibrary();

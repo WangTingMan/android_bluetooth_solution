@@ -39,9 +39,6 @@
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp.cc">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp_control.cc">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp_sink.cc">
       <Filter>src</Filter>
     </ClCompile>

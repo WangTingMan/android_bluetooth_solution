@@ -37,6 +37,5 @@ public:
 private:
 
     btav_source_callbacks_t m_callBack;
-    btav_source_interface_t* m_av_source_interface = nullptr;
 };
 

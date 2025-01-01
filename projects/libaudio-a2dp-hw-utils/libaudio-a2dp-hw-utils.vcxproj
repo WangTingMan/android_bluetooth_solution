@@ -19,10 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Bluetooth\system\audio_a2dp_hw\src\audio_a2dp_hw.cc" />
-    <ClCompile Include="..\..\..\Bluetooth\system\audio_a2dp_hw\src\audio_a2dp_hw_utils.cc" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\..\Bluetooth\system\audio_a2dp_hw\include\audio_a2dp_hw.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

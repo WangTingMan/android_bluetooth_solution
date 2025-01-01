@@ -26,7 +26,6 @@
     <ClCompile Include="..\..\..\Bluetooth\system\btif\co\bta_pan_co.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\bluetooth.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp.cc" />
-    <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp_control.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp_sink.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_a2dp_source.cc" />
     <ClCompile Include="..\..\..\Bluetooth\system\btif\src\btif_av.cc" />
@@ -103,7 +102,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\stack\include;$(SolutionDir)../Bluetooth\system\include\hardware\avrcp;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\bta\include;$(SolutionDir)../Bluetooth\system\bta;$(SolutionDir)../Bluetooth\system\btif\include;$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\stack;$(SolutionDir)../Bluetooth\system\profile\avrcp;$(SolutionDir)../Bluetooth\system\stack\btm;$(SolutionDir)../Bluetooth\sysprop\exported_include;$(SolutionDir)../Bluetooth\system\embdrv\encoder_for_aptxhd\include;$(SolutionDir)../Bluetooth\system\embdrv\encoder_for_aptx\include;$(SolutionDir)../Bluetooth\flags\exported_include;$(SolutionDir)../generated;$(SolutionDir)../generated\sysprop\include;E:\VCLAB\component\chromebase;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\flatbuffers\include;E:\VCLAB\component\protobuf\src;E:\VCLAB\component\boringssl\src\include;E:\VCLAB\component\system\media\audio_utils\include</IncludePath>
+    <IncludePath>$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\stack\include;$(SolutionDir)../Bluetooth\system\include\hardware\avrcp;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\bta\include;$(SolutionDir)../Bluetooth\system\bta;$(SolutionDir)../Bluetooth\system\btif\include;$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\stack;$(SolutionDir)../Bluetooth\system\profile\avrcp;$(SolutionDir)../Bluetooth\system\stack\btm;$(SolutionDir)../Bluetooth\sysprop\exported_include;$(SolutionDir)../Bluetooth\system\embdrv\encoder_for_aptxhd\include;$(SolutionDir)../Bluetooth\system\embdrv\encoder_for_aptx\include;$(SolutionDir)../Bluetooth\flags\exported_include;$(SolutionDir)../generated;$(SolutionDir)../generated\sysprop\include;E:\VCLAB\component\chromebase;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\flatbuffers\include;E:\VCLAB\component\protobuf\src;E:\VCLAB\component\boringssl\src\include;E:\VCLAB\component\system\media\audio_utils\include;E:\VCLAB\component\core\libutils\binder\include</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -143,7 +142,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;NOMINMAX;_LIB;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;NOMINMAX;LIBBLUETOOTH_IMPLEMENTATION;_LIB;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>

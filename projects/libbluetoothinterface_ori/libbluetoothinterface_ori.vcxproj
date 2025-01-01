@@ -92,7 +92,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../BluetoothApplication;$(SolutionDir)../Zhen;E:\VCLAB\NewAndroidInWindows\Zhen;E:\VCLAB\NewAndroidInWindows\BluetoothApplication;E:\VCLAB\component\chromebase;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\frameworks_native\libs\binder\include;E:\VCLAB\component\core\libbinderwrapper\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\libbase\include;E:\VCLAB\component\logging\liblog\include;E:\local\boost_1_85_0;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../BluetoothApplication;$(SolutionDir)../Zhen;E:\VCLAB\NewAndroidInWindows\Zhen;E:\VCLAB\NewAndroidInWindows\BluetoothApplication;E:\VCLAB\component\chromebase;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\frameworks_native\libs\binder\include;E:\VCLAB\component\core\libbinderwrapper\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\libbase\include;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\core\libutils\binder\include;E:\local\boost_1_85_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,7 +132,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>

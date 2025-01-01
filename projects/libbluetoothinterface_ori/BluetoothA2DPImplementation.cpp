@@ -7,6 +7,8 @@
 #include <Zhen/PageManager.h>
 #include <Zhen/ExecutbleEvent.h>
 
+#include <btif/include/btif_av.h>
+
 static constexpr int MAX_SNK_ALLOWED = 1;
 
 BluetoothA2DPInterface& BluetoothA2DPInterface::GetInterface()
@@ -86,8 +88,6 @@ void BluetoothA2DPImplementation::Init()
 
     bt_interface_t* interfaceBt = nullptr;
     interfaceBt = BluetoothBaseImplementation::GetInstance().GetBtInterface();
-    m_av_source_interface = (btav_source_interface_t*)interfaceBt->get_profile_interface
-        (BT_PROFILE_ADVANCED_AUDIO_ID);
 
     btav_a2dp_codec_config_t sbcCodeConfig;
     sbcCodeConfig.bits_per_sample = BTAV_A2DP_CODEC_BITS_PER_SAMPLE_32;
@@ -117,7 +117,7 @@ void BluetoothA2DPImplementation::Init()
 
     std::vector<btav_a2dp_codec_info_t> supported_codecs;
 
-    m_av_source_interface->init
+    btif_av_source_init
         (
         &m_callBack,
         MAX_SNK_ALLOWED,
@@ -134,7 +134,7 @@ bool BluetoothA2DPImplementation::Connect
 {
     RawAddress address;
     memcpy(address.address, a_address.address, BluetoothAddress::kLength);
-    m_av_source_interface->connect(address);
+    btif_av_source_connect(address);
     return true;
 }
 
@@ -145,7 +145,7 @@ bool BluetoothA2DPImplementation::disconnect
 {
     RawAddress address;
     memcpy(address.address, a_address.address, BluetoothAddress::kLength);
-    m_av_source_interface->disconnect(address);
+    btif_av_source_disconnect(address);
     return true;
 }
 
@@ -157,7 +157,7 @@ bool BluetoothA2DPImplementation::setActiveDevice
     RawAddress address;
     memcpy(address.address, a_address.address, BluetoothAddress::kLength);
     bt_status_t ret_status = BT_STATUS_SUCCESS;
-    ret_status = m_av_source_interface->set_active_device(address);
+    ret_status = btif_av_source_set_active_device(address);
     return BT_STATUS_SUCCESS == ret_status;
 }
 
@@ -168,7 +168,7 @@ bool BluetoothA2DPImplementation::setSilenceDevice
 {
     RawAddress address;
     memcpy(address.address, a_address.address, BluetoothAddress::kLength);
-    m_av_source_interface->set_silence_device(address, true);
+    btif_av_source_set_silence_device(address, true);
     return true;
 }
 

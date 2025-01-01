@@ -13,7 +13,7 @@ extern "C"
         return &bluetoothInterface;
     }
 
-    EXPORT_SYMBOL void test()
+    EXPORT_SYMBOL void AndroidBluetoothInterfaceTest()
     {
         test_impl();
     }
