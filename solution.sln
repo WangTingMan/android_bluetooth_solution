@@ -89,6 +89,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bluetooth_packetgen", "proj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbluetoothinterface_ori", "projects\libbluetoothinterface_ori\libbluetoothinterface_ori.vcxproj", "{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bluetooth_test", "..\..\bluetooth_test\BluetoothApplication\ms_build\bluetooth_test\bluetooth_test.vcxproj", "{31AAAFBA-1F13-46D0-8C4D-A68157921246}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libZhen", "..\..\component\Zhen\ms_build\libZhen\libZhen.vcxproj", "{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -417,6 +421,22 @@ Global
 		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x64.Build.0 = Release|x64
 		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x86.ActiveCfg = Release|Win32
 		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x86.Build.0 = Release|Win32
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Debug|x64.ActiveCfg = Debug|x64
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Debug|x64.Build.0 = Debug|x64
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Debug|x86.ActiveCfg = Debug|Win32
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Debug|x86.Build.0 = Debug|Win32
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Release|x64.ActiveCfg = Release|x64
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Release|x64.Build.0 = Release|x64
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Release|x86.ActiveCfg = Release|Win32
+		{31AAAFBA-1F13-46D0-8C4D-A68157921246}.Release|x86.Build.0 = Release|Win32
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Debug|x64.ActiveCfg = Debug|x64
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Debug|x64.Build.0 = Debug|x64
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Debug|x86.ActiveCfg = Debug|Win32
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Debug|x86.Build.0 = Debug|Win32
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Release|x64.ActiveCfg = Release|x64
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Release|x64.Build.0 = Release|x64
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Release|x86.ActiveCfg = Release|Win32
+		{D7B0B9E7-4AB0-41D5-A2BE-0A439280B7B5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

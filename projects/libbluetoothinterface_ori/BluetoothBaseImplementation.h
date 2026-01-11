@@ -41,7 +41,14 @@ public:
         uint32_t a_passkey
         ) override;
 
-    void* GetFakeAudioInterfaceFromModule() override;
+    bool PincodeReply
+        (
+        BluetoothAddress     a_address,
+        bool                 a_accept,
+        std::vector<uint8_t> a_pin
+        )override;
+
+    void* GetFakeAudioInterfaceFromModule();
 
     void test() override;
 

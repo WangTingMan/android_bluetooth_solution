@@ -39,6 +39,30 @@
     <ClCompile Include="StackUtils.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="BluetoothGattClientImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothGattServerImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothGattImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothAdvScannerImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothAvrcpTargetInterfaceImpl.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothHFAgImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothHidHostImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BluetoothRfcommImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binder_server.h">
@@ -59,13 +83,34 @@
     <ClInclude Include="BluetoothBaseImplementation.h">
       <Filter>header</Filter>
     </ClInclude>
-    <ClInclude Include="BluetoothGattClientInterfaceImpl.h">
-      <Filter>header</Filter>
-    </ClInclude>
     <ClInclude Include="BluetoothHFImplementation.h">
       <Filter>header</Filter>
     </ClInclude>
     <ClInclude Include="StackUtils.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothGattClientImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothGattServerImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothGattImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothAdvScannerImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothAvrcpTargetInterfaceImpl.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothHFAgImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothHidHostImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothRfcommImplementation.h">
       <Filter>header</Filter>
     </ClInclude>
   </ItemGroup>

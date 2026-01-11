@@ -710,6 +710,24 @@ bool BluetoothBaseImplementation::SspPairingReply
     return ret;
 }
 
+bool BluetoothBaseImplementation::PincodeReply
+    (
+    BluetoothAddress     a_address,
+    bool                 a_accept,
+    std::vector<uint8_t> a_pin
+    )
+{
+    bt_pin_code_t pin;
+    int cpy_len = 16 > a_pin.size() ? a_pin.size() : 16;
+    memcpy( pin.pin, a_pin.data(), cpy_len );
+
+    RawAddress bd_addr;
+    memcpy( bd_addr.address, a_address.address, RawAddress::kLength );
+
+    m_interface->pin_reply( &bd_addr, a_accept, cpy_len, &pin );
+    return true;
+}
+
 void* BluetoothBaseImplementation::GetFakeAudioInterfaceFromModule()
 {
     return m_fakeAudioInterface;
