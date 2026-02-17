@@ -67,6 +67,7 @@
 #pragma comment(lib, "libprotobuf-lite.lib")
 #pragma comment(lib, "libstatssocket.lib")
 #pragma comment(lib, "libutils_binder_sdk.lib")
+#pragma comment(lib, "libaaudio.lib")
 
 /**
  * from bp file: android/app/Android.bp:
