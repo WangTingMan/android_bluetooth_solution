@@ -19,11 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\BluetoothStack\stack\hci\hardware\intel_bluetooth_chipset_initializer.cpp" />
+    <ClCompile Include="..\..\..\..\BluetoothStack\stack\hci\hardware\log.cpp" />
+    <ClCompile Include="..\..\..\..\BluetoothStack\stack\hci\windows\windows_usb_transport.cpp" />
     <ClCompile Include="hci_log_win_side.cpp" />
     <ClCompile Include="local_hci_layer_modules.cpp" />
+    <ClCompile Include="local_hci_layer_static.cpp" />
     <ClCompile Include="test.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\BluetoothStack\stack\hci\hardware\intel_bluetooth_chipset_initializer.h" />
+    <ClInclude Include="..\..\..\..\BluetoothStack\stack\hci\hardware\log.h" />
+    <ClInclude Include="..\..\..\..\BluetoothStack\stack\hci\windows\windows_usb_transport.h" />
     <ClInclude Include="hci_log_win_side.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -79,7 +86,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../generated;E:\VCLAB\libWinBluetooth\libWinBluetooth;E:\VCLAB\BluetoothStack\libWinBluetooth;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\chromebase;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../generated;E:\VCLAB\libWinBluetooth\libWinBluetooth;E:\VCLAB\BluetoothStack\libWinBluetooth;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\chromebase;E:\VCLAB\BluetoothStack\stack\hci;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\logging\liblog\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -119,12 +126,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;ENABLE_HCI_AIR_SIDE_LOG;LIBBLUETOOTH_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;ENABLE_HCI_AIR_SIDE_LOG;LIBBLUETOOTH_IMPLEMENTATION;LIBWINBLUETOOTH_EXPORTS;STATIC_LIBRARY_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:preprocessor /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>

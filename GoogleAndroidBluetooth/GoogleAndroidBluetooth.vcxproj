@@ -18,73 +18,35 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="binder_server.cpp" />
-    <ClCompile Include="BluetoothA2DPImplementation.cpp" />
-    <ClCompile Include="BluetoothA2DPSinkImplementation.cpp" />
-    <ClCompile Include="BluetoothAdvScannerImplementation.cpp" />
-    <ClCompile Include="BluetoothAdvScanningImplementation.cpp" />
-    <ClCompile Include="BluetoothAvrcpInterfaceImpl.cpp" />
-    <ClCompile Include="BluetoothAvrcpTargetInterfaceImpl.cpp" />
-    <ClCompile Include="BluetoothBaseImplementation.cpp" />
-    <ClCompile Include="BluetoothGattClientImplementation.cpp" />
-    <ClCompile Include="BluetoothGattImplementation.cpp" />
-    <ClCompile Include="BluetoothGattServerImplementation.cpp" />
-    <ClCompile Include="BluetoothHFAgImplementation.cpp" />
-    <ClCompile Include="BluetoothHFImplementation.cpp" />
-    <ClCompile Include="BluetoothHidHostImplementation.cpp" />
-    <ClCompile Include="BluetoothPANImplementation.cpp" />
-    <ClCompile Include="BluetoothRfcommImplementation.cpp" />
-    <ClCompile Include="StackUtils.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="binder_server.h" />
-    <ClInclude Include="BluetoothA2DPImplementation.h" />
-    <ClInclude Include="BluetoothA2DPSinkImplementation.h" />
-    <ClInclude Include="BluetoothAdvScannerImplementation.h" />
-    <ClInclude Include="BluetoothAdvScanningImplementation.h" />
-    <ClInclude Include="BluetoothAvrcpInterfaceImpl.h" />
-    <ClInclude Include="BluetoothAvrcpTargetInterfaceImpl.h" />
-    <ClInclude Include="BluetoothBaseImplementation.h" />
-    <ClInclude Include="BluetoothGattClientImplementation.h" />
-    <ClInclude Include="BluetoothGattImplementation.h" />
-    <ClInclude Include="BluetoothGattServerImplementation.h" />
-    <ClInclude Include="BluetoothHFAgImplementation.h" />
-    <ClInclude Include="BluetoothHFImplementation.h" />
-    <ClInclude Include="BluetoothHidHostImplementation.h" />
-    <ClInclude Include="BluetoothPANImplementation.h" />
-    <ClInclude Include="BluetoothRfcommImplementation.h" />
-    <ClInclude Include="StackUtils.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cd2608b3-e94a-4d19-b416-a71c0c08b1e1}</ProjectGuid>
-    <RootNamespace>libbluetoothinterfaceori</RootNamespace>
+    <ProjectGuid>{2c57b48e-fe5d-49cb-b9e8-6871061d5f3a}</ProjectGuid>
+    <RootNamespace>GoogleAndroidBluetooth</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -109,21 +71,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)../Bluetooth\system;$(SolutionDir)../Bluetooth\system\log\include;$(SolutionDir)../Bluetooth\system\types;$(SolutionDir)../Bluetooth\system\stack\include;$(SolutionDir)../Bluetooth\system\gd;$(SolutionDir)../Bluetooth\system\include;$(SolutionDir)../BluetoothApplication;E:\VCLAB\component\chromebase;E:\VCLAB\component\core\libcutils\include;E:\VCLAB\component\system\external\fmtlib\include;E:\VCLAB\component\frameworks_native\libs\binder\include;E:\VCLAB\component\core\libbinderwrapper\include;E:\VCLAB\component\core\libutils\include;E:\VCLAB\component\libbase\include;E:\VCLAB\component\logging\liblog\include;E:\VCLAB\component\core\libutils\binder\include;E:\VCLAB\component\Zhen;E:\VCLAB\component\boost_signals2;E:\VCLAB\bluetooth_test\BluetoothApplication;E:\VCLAB\bluetooth_test\BluetoothApplication\app;$(IncludePath)</IncludePath>
-    <TargetName>libbluetoothinterface</TargetName>
+    <IncludePath>E:\VCLAB\component\Zhen;E:\VCLAB\bluetooth_test\BluetoothApplication\app;E:\VCLAB\component\boost_signals2;E:\VCLAB\bluetooth_test\BluetoothApplication;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)$(Platform)\$(Configuration)\;E:\VCLAB\component\x64\Debug;E:\VCLAB\bluetooth_test\BluetoothApplication\ms_build\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>
-      </SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -133,16 +92,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>
-      </SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -150,18 +104,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;BUILD_PATH=R"($(SolutionDir)$(Platform)\$(Configuration)\)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <DisableSpecificWarnings>4251;4250;4275</DisableSpecificWarnings>
-      <AdditionalOptions>/D "GEN_DIR=\"$(SolutionDir)$(Platform)/$(Configuration)/\"" %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <SubSystem>
-      </SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libZhen.lib;lib_bluetooth_app.lib;libChromeBase.lib;libutils_binder_sdk.lib;libbluetoothinterface.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -170,19 +121,17 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>
-      </SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -16,6 +16,9 @@
     <Filter Include="test">
       <UniqueIdentifier>{4268efe8-a027-49ef-8c2e-931aa12616f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="standard_win_usb">
+      <UniqueIdentifier>{aa8b7207-3718-4cfa-82bc-eb4c553f4721}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="local_hci_layer_modules.cpp">
@@ -27,10 +30,31 @@
     <ClCompile Include="test.cc">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\BluetoothStack\stack\hci\windows\windows_usb_transport.cpp">
+      <Filter>standard_win_usb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\BluetoothStack\stack\hci\hardware\intel_bluetooth_chipset_initializer.cpp">
+      <Filter>standard_win_usb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\BluetoothStack\stack\hci\hardware\log.cpp">
+      <Filter>standard_win_usb</Filter>
+    </ClCompile>
+    <ClCompile Include="local_hci_layer_static.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hci_log_win_side.h">
       <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\BluetoothStack\stack\hci\windows\windows_usb_transport.h">
+      <Filter>standard_win_usb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\BluetoothStack\stack\hci\hardware\intel_bluetooth_chipset_initializer.h">
+      <Filter>standard_win_usb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\BluetoothStack\stack\hci\hardware\log.h">
+      <Filter>standard_win_usb</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

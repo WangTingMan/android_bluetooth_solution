@@ -127,7 +127,7 @@ public:
     boost_ns::signals2::connection ConnectToCharacteristicWriteCompleted
         (
         std::function<void(int conn_id, int status,
-            uint16_t handle)> a_fun
+            uint16_t handle, uint16_t len, std::vector<uint8_t> value )> a_fun
         )
     {
         return m_characteristicWriteCompletedSignal.connect(a_fun);
@@ -191,7 +191,7 @@ private:
     boost_ns::signals2::signal<void(std::shared_ptr<GattClientBaseMessage>)> m_gattClientMessageSignal;
     boost_ns::signals2::signal<void(std::vector<btgatt_db_element_type>, int)> m_gattServiceSearchCompletedSignal;
     boost_ns::signals2::signal<void(int, int, btgatt_read_params_type)> m_descriptorReadCompletedSignal;
-    boost_ns::signals2::signal<void(int, int, uint16_t)> m_characteristicWriteCompletedSignal;
+    boost_ns::signals2::signal<void(int, int, uint16_t, uint16_t, std::vector<uint8_t>)> m_characteristicWriteCompletedSignal;
 
     btgatt_client_callbacks_t m_clientCallback;
     btgatt_client_interface_t* gatt_client_interface = nullptr;

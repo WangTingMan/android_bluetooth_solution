@@ -1,6 +1,7 @@
 #if __has_include(<win_bluetooth.h>)
 #include <win_bluetooth.h>
 #define WIN_BLUETOOTH_ENABLED
+#define USE_LOCAL_HCI_LAYRER_MODULE_WITH_DYNAMIC_LIBRARY
 #endif
 
 #include <atomic>
@@ -13,9 +14,7 @@
 
 #include "bluetooth/log.h"
 
-#define USE_LOCAL_HCI_LAYRER_MODULE
-
-#ifdef USE_LOCAL_HCI_LAYRER_MODULE
+#ifdef USE_LOCAL_HCI_LAYRER_MODULE_WITH_DYNAMIC_LIBRARY
 
 #ifdef WIN_BLUETOOTH_ENABLED
 #pragma comment(lib, "libWinBluetooth.lib")

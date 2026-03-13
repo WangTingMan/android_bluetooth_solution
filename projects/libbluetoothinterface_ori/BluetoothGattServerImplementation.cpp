@@ -390,6 +390,7 @@ void BluetoothGattServerImplementation::AddServiceBody
     std::vector<btgatt_db_element_t> service;
     for (auto& ele : service_elements)
     {
+        /*
         btgatt_db_element_t db_ele;
         db_ele.id = ele.id;
         memcpy( db_ele.uuid.uu.data(), ele.uuid.data(), bluetooth::Uuid::kNumBytes128 );
@@ -418,6 +419,7 @@ void BluetoothGattServerImplementation::AddServiceBody
         db_ele.permissions = ele.permissions;
         db_ele.extended_properties = ele.extended_properties;
         service.push_back( db_ele );
+        */
     }
 
     m_serverInterface->add_service( server_if, service.data(), service.size() );
@@ -494,7 +496,7 @@ void BluetoothGattServerImplementation::handle_register_server_callback
     std::vector<uint8_t> uuid;
     uuid.assign( app_uuid.uu.begin(), app_uuid.uu.begin() + bluetooth::Uuid::kNumBytes128 );
 
-    m_gattClientInitializedSignal( status == GATT_SUCCESS, server_if, uuid );
+    //m_gattClientInitializedSignal( status == GATT_SUCCESS, server_if, uuid );
 }
 
 void BluetoothGattServerImplementation::handle_connection_callback

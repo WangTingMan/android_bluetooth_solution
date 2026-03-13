@@ -513,12 +513,12 @@ BluetoothBaseImplementation::BluetoothBaseImplementation()
 
 void BluetoothBaseImplementation::InitPlatform()
 {
-    __set_default_log_file_name( "D:/bluetooth/google_stack.log", true );
+    __set_default_log_file_name( BUILD_PATH "google_stack.log", true );
     parse_property_from_ini( "D:/bluetooth/setting/settings.ini" );
-    property_set( "persist.bluetooth.bt_config_path", "D:/bluetooth/setting/bt_config.conf" );
-    property_set( "persist.bluetooth.btsnoop_hci_path", "D:/bluetooth/btsnoop_hci.log" );
-    property_set( "persist.bluetooth.btsnooz_hci_path", "D:/bluetooth/btsnooz_hci.log" );
-    property_set( "persist.bluetooth.bt_stack_path", "D:/bluetooth/setting/bt_stack.conf" );
+    property_set( "persist.bluetooth.bt_config_path", BUILD_PATH "bt_config.conf" );
+    property_set( "persist.bluetooth.btsnoop_hci_path", BUILD_PATH "btsnoop_hci.log" );
+    property_set( "persist.bluetooth.btsnooz_hci_path", BUILD_PATH "btsnooz_hci.log" );
+    property_set( "persist.bluetooth.bt_stack_path", BUILD_PATH "bt_stack.conf" );
     property_set( "bluetooth.core.le.vendor_capabilities.enabled", "false" );
     property_set( "persist.bluetooth.btsnooplogmode", "full" );
     binder_server_init();

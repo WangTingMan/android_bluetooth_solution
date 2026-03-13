@@ -575,5 +575,5 @@ void BluetoothGattClientImplementation::HandleCharacteristicWriteCompleted
     uint16_t handle
     )
 {
-    m_characteristicWriteCompletedSignal( conn_id, status, handle );
+    //m_characteristicWriteCompletedSignal( conn_id, status, handle );
 }

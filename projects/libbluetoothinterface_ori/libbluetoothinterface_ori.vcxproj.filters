@@ -63,6 +63,9 @@
     <ClCompile Include="BluetoothRfcommImplementation.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="BluetoothPANImplementation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binder_server.h">
@@ -111,6 +114,9 @@
       <Filter>header</Filter>
     </ClInclude>
     <ClInclude Include="BluetoothRfcommImplementation.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="BluetoothPANImplementation.h">
       <Filter>header</Filter>
     </ClInclude>
   </ItemGroup>

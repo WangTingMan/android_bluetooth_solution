@@ -89,6 +89,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bluetooth_packetgen", "proj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbluetoothinterface_ori", "projects\libbluetoothinterface_ori\libbluetoothinterface_ori.vcxproj", "{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleAndroidBluetooth", "GoogleAndroidBluetooth\GoogleAndroidBluetooth.vcxproj", "{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -417,6 +419,14 @@ Global
 		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x64.Build.0 = Release|x64
 		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x86.ActiveCfg = Release|Win32
 		{CD2608B3-E94A-4D19-B416-A71C0C08B1E1}.Release|x86.Build.0 = Release|Win32
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Debug|x64.ActiveCfg = Debug|x64
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Debug|x64.Build.0 = Debug|x64
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Debug|x86.ActiveCfg = Debug|Win32
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Debug|x86.Build.0 = Debug|Win32
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Release|x64.ActiveCfg = Release|x64
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Release|x64.Build.0 = Release|x64
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Release|x86.ActiveCfg = Release|Win32
+		{2C57B48E-FE5D-49CB-B9E8-6871061D5F3A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
