@@ -232,17 +232,17 @@ void _congestion_client_callback( int conn_id, bool congested )
 void _get_gatt_db_callback( int conn_id, const btgatt_db_element_t* db,
     int count )
 {
-    std::vector<btgatt_db_element_type> db_elements;
+    std::vector<GATT_DB_ELEMENT> db_elements;
     for (int i = 0; i < count; ++i)
     {
-        btgatt_db_element_type db_element;
+        GATT_DB_ELEMENT db_element;
         db_element.attribute_handle = db[i].attribute_handle;
         db_element.end_handle = db[i].end_handle;
         db_element.id = db[i].id;
         db_element.permissions = db[i].permissions;
         db_element.properties = db[i].properties;
         db_element.start_handle = db[i].start_handle;
-        db_element.type = (bt_gatt_db_attribute_type_type)db[i].type;
+        db_element.type = (gatt_db_attribute_type)db[i].type;
         db_element.uuid.assign(db[i].uuid.uu.begin(), db[i].uuid.uu.end());
 
         db_elements.push_back(db_element);
@@ -553,7 +553,7 @@ void BluetoothGattClientImplementation::HandleGattServiceSearchingCompleted
 
 void BluetoothGattClientImplementation::HandleGattServiceSearchingDetailCompleted
     (
-    std::vector<btgatt_db_element_type> a_db_elements,
+    std::vector<GATT_DB_ELEMENT> a_db_elements,
     int a_connection_id
     )
 {

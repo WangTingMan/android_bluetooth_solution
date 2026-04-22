@@ -360,6 +360,15 @@ void BluetoothGattServerImplementation::UnregisterGattServer
     m_serverInterface->unregister_server( a_server_id );
 }
 
+void BluetoothGattServerImplementation::StopGattService
+    (
+    int server_if,
+    int service_handle
+    )
+{
+
+}
+
 void BluetoothGattServerImplementation::Connect
     (
     int server_if,
@@ -423,6 +432,17 @@ void BluetoothGattServerImplementation::AddServiceBody
     }
 
     m_serverInterface->add_service( server_if, service.data(), service.size() );
+}
+
+void BluetoothGattServerImplementation::SendResponse
+    (
+    int conn_id,
+    int trans_id,
+    int status,
+    GATTResponseContent response
+    )
+{
+
 }
 
 void BluetoothGattServerImplementation::StopService

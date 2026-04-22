@@ -110,7 +110,7 @@ public:
 
     boost_ns::signals2::connection ConnectToServiceSearchCompleted
         (
-        std::function<void(std::vector<btgatt_db_element_type>, int)> a_fun
+        std::function<void(std::vector<GATT_DB_ELEMENT>, int)> a_fun
         )
     {
         return m_gattServiceSearchCompletedSignal.connect(a_fun);
@@ -167,7 +167,7 @@ public:
 
     void HandleGattServiceSearchingDetailCompleted
         (
-        std::vector<btgatt_db_element_type> a_db_elements,
+        std::vector<GATT_DB_ELEMENT> a_db_elements,
         int a_connection_id
         );
 
@@ -189,7 +189,7 @@ private:
     boost_ns::signals2::signal<void(int, int, std::vector<uint8_t>)> m_gattClientRegisteredSignal;
     boost_ns::signals2::signal<void(int/*conn_id*/, ConnectionStatus/*a_status*/, int/*client_if*/, BluetoothAddress)> m_gattConnectionStatusChangedSignal;
     boost_ns::signals2::signal<void(std::shared_ptr<GattClientBaseMessage>)> m_gattClientMessageSignal;
-    boost_ns::signals2::signal<void(std::vector<btgatt_db_element_type>, int)> m_gattServiceSearchCompletedSignal;
+    boost_ns::signals2::signal<void(std::vector<GATT_DB_ELEMENT>, int)> m_gattServiceSearchCompletedSignal;
     boost_ns::signals2::signal<void(int, int, btgatt_read_params_type)> m_descriptorReadCompletedSignal;
     boost_ns::signals2::signal<void(int, int, uint16_t, uint16_t, std::vector<uint8_t>)> m_characteristicWriteCompletedSignal;
 
