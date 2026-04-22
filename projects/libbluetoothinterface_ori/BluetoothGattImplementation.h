@@ -19,6 +19,11 @@ public:
 
     void* GetScannerInterface();
 
+    void* GetAdvInterface()
+    {
+        return advertiserInterface;
+    }
+
 private:
 
     bool m_inited = false;

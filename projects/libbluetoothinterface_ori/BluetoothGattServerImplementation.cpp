@@ -4,6 +4,7 @@
 #include "BT/Adaptor.h"
 
 #include <hardware/bt_gatt.h>
+#include <hardware/bt_gatt_types.h>
 #include <gatt_api.h>
 
 #include <Zhen/PageManager.h>
@@ -50,9 +51,13 @@ void _connection_callback( int conn_id, int server_if, int connected,
 }
 
 /** Callback invoked in response to create_service */
-void _service_added_callback( int status, int server_if,
+void _service_added_callback
+    (
+    int status,
+    int server_if,
     const btgatt_db_element_t* a_service,
-    size_t service_count )
+    size_t service_count
+    )
 {
     std::vector<btgatt_db_element_t> service_out;
     for (size_t i = 0; i < service_count; ++i)
@@ -104,9 +109,15 @@ void _service_deleted_callback( int status, int server_if,
  * Callback invoked when a remote device has requested to read a characteristic
  * or descriptor. The application must respond by calling send_response
  */
-void _request_read_characteristic_cb( int conn_id, int trans_id,
-    const RawAddress& bda, int attr_handle,
-    int offset, bool is_long )
+void _request_read_characteristic_cb
+    (
+    int conn_id,
+    int trans_id,
+    const RawAddress& bda,
+    int attr_handle,
+    int offset,
+    bool is_long
+    )
 {
     std::shared_ptr< ExecutbleEvent > event = std::make_shared<ExecutbleEvent>();
     auto fun = std::bind
@@ -123,9 +134,15 @@ void _request_read_characteristic_cb( int conn_id, int trans_id,
  * Callback invoked when a remote device has requested to read a characteristic
  * or descriptor. The application must respond by calling send_response
  */
-void _request_read_descriptor_cb( int conn_id, int trans_id,
-    const RawAddress& bda, int attr_handle,
-    int offset, bool is_long )
+void _request_read_descriptor_cb
+    (
+    int conn_id,
+    int trans_id,
+    const RawAddress& bda,
+    int attr_handle,
+    int offset,
+    bool is_long
+    )
 {
     std::shared_ptr< ExecutbleEvent > event = std::make_shared<ExecutbleEvent>();
     auto fun = std::bind
@@ -397,38 +414,18 @@ void BluetoothGattServerImplementation::AddServiceBody
     )
 {
     std::vector<btgatt_db_element_t> service;
-    for (auto& ele : service_elements)
+    for (auto&& element : service_elements)
     {
-        /*
-        btgatt_db_element_t db_ele;
-        db_ele.id = ele.id;
-        memcpy( db_ele.uuid.uu.data(), ele.uuid.data(), bluetooth::Uuid::kNumBytes128 );
-        switch (ele.type)
-        {
-        case GATT_DB_TYPE::BTGATT_DB_PRIMARY_SERVICE:
-            db_ele.type = BTGATT_DB_PRIMARY_SERVICE;
-            break;
-        case GATT_DB_TYPE::BTGATT_DB_SECONDARY_SERVICE:
-            db_ele.type = BTGATT_DB_SECONDARY_SERVICE;
-            break;
-        case GATT_DB_TYPE::BTGATT_DB_INCLUDED_SERVICE:
-            db_ele.type = BTGATT_DB_INCLUDED_SERVICE;
-            break;
-        case GATT_DB_TYPE::BTGATT_DB_CHARACTERISTIC:
-            db_ele.type = BTGATT_DB_CHARACTERISTIC;
-            break;
-        case GATT_DB_TYPE::BTGATT_DB_DESCRIPTOR:
-            db_ele.type = BTGATT_DB_DESCRIPTOR;
-            break;
-        }
-        db_ele.attribute_handle = ele.attribute_handle;
-        db_ele.start_handle = ele.start_handle;
-        db_ele.end_handle = ele.end_handle;
-        db_ele.properties = ele.properties;
-        db_ele.permissions = ele.permissions;
-        db_ele.extended_properties = ele.extended_properties;
-        service.push_back( db_ele );
-        */
+        btgatt_db_element_t db_element;
+        db_element.attribute_handle = element.attribute_handle;
+        db_element.end_handle = element.end_handle;
+        db_element.id = element.id;
+        db_element.permissions = element.permissions;
+        db_element.properties = element.properties;
+        db_element.start_handle = element.start_handle;
+        db_element.type = (bt_gatt_db_attribute_type_t)element.type;
+        memcpy( db_element.uuid.uu.data(), element.uuid.data(), element.uuid.size() );
+        service.push_back( db_element );
     }
 
     m_serverInterface->add_service( server_if, service.data(), service.size() );
@@ -442,7 +439,24 @@ void BluetoothGattServerImplementation::SendResponse
     GATTResponseContent response
     )
 {
+    btgatt_response_t response_;
+    memset( &response_, 0x00, sizeof( btgatt_response_t ) );
+    if (status == 0x00)
+    {
+        response_.attr_value.handle = response.handle;
+        response_.attr_value.auth_req = 0;
+        response_.attr_value.len = response.len;
+        response_.attr_value.offset = response.offset;
 
+        uint32_t copy_size = response.len > GATT_MAX_ATTR_LEN ? GATT_MAX_ATTR_LEN : response.len;
+        memcpy( response_.attr_value.value, response.value, copy_size );
+    }
+    else
+    {
+        response_.handle = response.handle;
+    }
+
+    m_serverInterface->send_response( conn_id, trans_id, status, response_ );
 }
 
 void BluetoothGattServerImplementation::StopService
@@ -516,7 +530,7 @@ void BluetoothGattServerImplementation::handle_register_server_callback
     std::vector<uint8_t> uuid;
     uuid.assign( app_uuid.uu.begin(), app_uuid.uu.begin() + bluetooth::Uuid::kNumBytes128 );
 
-    //m_gattClientInitializedSignal( status == GATT_SUCCESS, server_if, uuid );
+    m_gattServiceRegisteredSignal( status, server_if, uuid );
 }
 
 void BluetoothGattServerImplementation::handle_connection_callback
@@ -530,9 +544,25 @@ void BluetoothGattServerImplementation::handle_connection_callback
 
 }
 
-void BluetoothGattServerImplementation::handle_service_added_callback( int status, int server_if, std::vector<btgatt_db_element_t> service )
+void BluetoothGattServerImplementation::handle_service_added_callback( int status, int server_if, std::vector<btgatt_db_element_t> service_elements )
 {
+    std::vector<GATT_DB_ELEMENT> service;
+    for (auto&& element : service_elements)
+    {
+        GATT_DB_ELEMENT db_element;
+        db_element.uuid.resize( 16 );
+        db_element.attribute_handle = element.attribute_handle;
+        db_element.end_handle = element.end_handle;
+        db_element.id = element.id;
+        db_element.permissions = element.permissions;
+        db_element.properties = element.properties;
+        db_element.start_handle = element.start_handle;
+        db_element.type = (gatt_db_attribute_type)element.type;
+        memcpy( db_element.uuid.data(), element.uuid.uu.data(), db_element.uuid.size() );
+        service.push_back( db_element );
+    }
 
+    m_gatt_service_body_added_signal( status, server_if, service );
 }
 
 void BluetoothGattServerImplementation::handle_service_stopped_callback( int status, int server_if,
@@ -551,14 +581,18 @@ void BluetoothGattServerImplementation::handle_request_read_characteristic_cb( i
     const RawAddress& bda, int attr_handle,
     int offset, bool is_long )
 {
-
+    BluetoothAddress addr;
+    memcpy( addr.address, bda.address, RawAddress::kLength );
+    m_client_read_characteristic_request_siganl( conn_id, trans_id, addr, attr_handle, offset, is_long );
 }
 
 void BluetoothGattServerImplementation::handle_request_read_descriptor_cb( int conn_id, int trans_id,
     const RawAddress& bda, int attr_handle,
     int offset, bool is_long )
 {
-
+    BluetoothAddress addr;
+    memcpy( addr.address, bda.address, RawAddress::kLength );
+    m_client_read_descriptor_request_siganl( conn_id, trans_id, addr, attr_handle, offset, is_long );
 }
 
 void BluetoothGattServerImplementation::handle_request_write_characteristic_cb( int conn_id, int trans_id,
@@ -566,7 +600,9 @@ void BluetoothGattServerImplementation::handle_request_write_characteristic_cb( 
     int offset, bool need_rsp, bool is_prep,
     std::vector<uint8_t> value )
 {
-
+    BluetoothAddress addr;
+    memcpy( addr.address, bda.address, RawAddress::kLength );
+    m_client_request_write_characteristic_siganl( conn_id, trans_id, addr, attr_handle, offset, need_rsp, is_prep, value );
 }
 
 void BluetoothGattServerImplementation::handle_request_write_descriptor_cb( int conn_id, int trans_id,

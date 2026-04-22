@@ -22,6 +22,7 @@
     <ClCompile Include="binder_server.cpp" />
     <ClCompile Include="BluetoothA2DPImplementation.cpp" />
     <ClCompile Include="BluetoothA2DPSinkImplementation.cpp" />
+    <ClCompile Include="BluetoothAdvImplementation.cpp" />
     <ClCompile Include="BluetoothAdvScannerImplementation.cpp" />
     <ClCompile Include="BluetoothAdvScanningImplementation.cpp" />
     <ClCompile Include="BluetoothAvrcpInterfaceImpl.cpp" />
@@ -41,6 +42,7 @@
     <ClInclude Include="binder_server.h" />
     <ClInclude Include="BluetoothA2DPImplementation.h" />
     <ClInclude Include="BluetoothA2DPSinkImplementation.h" />
+    <ClInclude Include="BluetoothAdvImplementation.h" />
     <ClInclude Include="BluetoothAdvScannerImplementation.h" />
     <ClInclude Include="BluetoothAdvScanningImplementation.h" />
     <ClInclude Include="BluetoothAvrcpInterfaceImpl.h" />

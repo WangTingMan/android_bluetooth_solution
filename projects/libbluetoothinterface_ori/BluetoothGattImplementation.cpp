@@ -4,6 +4,7 @@
 #include "BluetoothBaseImplementation.h"
 #include "BT/Adaptor.h"
 #include "BluetoothAdvScannerImplementation.h"
+#include "BluetoothAdvImplementation.h"
 
 #include <hardware/bt_gatt.h>
 
@@ -79,17 +80,15 @@ void BluetoothGattImplementation::init()
     scannerInterface = m_btgatt_interface->scanner;
     advertiserInterface = m_btgatt_interface->advertiser;
 
-//     PageManager::GetInstance().PostEvent( std::make_shared<ExecutbleEvent>
-//             (
-//             std::bind( &BluetoothGattClient::init, std::ref( BluetoothGattClient::GetInstance() ) )
-//             ) );
-//     PageManager::GetInstance().PostEvent( std::make_shared<ExecutbleEvent>
-//             (
-//             std::bind( &BluetoothGattServer::init, std::ref( BluetoothGattServer::GetInstance() ) )
-//             ) );
     PageManager::GetInstance().PostEvent(std::make_shared<ExecutbleEvent>
             (
             std::bind(&BluetoothAdvScannerImplementation::init, std::ref(BluetoothAdvScannerImplementation::GetInstance()))
+            ) );
+
+    PageManager::GetInstance().PostEvent( std::make_shared<ExecutbleEvent>
+            (
+            std::bind( &BluetoothAdvImplementation::init,
+                std::ref( BluetoothAdvImplementation::GetInstance() ) )
             ) );
 }
 
